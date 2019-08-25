@@ -8,12 +8,11 @@ MapAction's master templates are stored in Arc, and a reference document maintai
 QGIS templates are maintained using a script which runs against a master template and this document to create a template set to match the Arc originals.
 
 **Resources**
-1. Output set (jpg of PDF) of original Arc templates
-2. Reference spreadsheet with schedule of elements and postion/dimension values per spreadsheet
-3. XML version of spreadsheet converted from CSV using http://convertcsv.com/csv-to-xml.htm to create XML lookup file
-4. Master QGIS template containing a complete set of all required elements across all templates, with ID values corresponding to those in the spreadsheet
-5. Script (XSLT) to generate output
-6. Empty QGIS project to hold all Layouts
+1. Reference spreadsheet with schedule of elements and postion/dimension values per spreadsheet
+2. XML version of spreadsheet converted from CSV using http://convertcsv.com/csv-to-xml.htm to create XML lookup file
+3. Master QGIS template containing a complete set of all required elements across all templates, with ID values corresponding to those in the spreadsheet
+4. Script (XSLT) to generate output
+5. Empty QGIS project to hold all Layouts
 
 **Processing**
 1. Create a new Print Layout using the current master template, and ensure it contains all required elements for all templates

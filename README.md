@@ -2,6 +2,7 @@
 A set of scripts to generate QGIS templates which replicate ArcGIS templates
 
 **Summary**
+
 MapAction's master templates are stored in Arc, and a reference document maintained containing settings (position, dimensions) for all elements.
 
 QGIS templates are maintained using a script which runs against a master template and this document to create a template set to match the Arc originals.

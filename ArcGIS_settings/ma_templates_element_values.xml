@@ -1,0 +1,1267 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+  <row>
+    <Template>arcgis_10_6_reference_landscape_bottom.mxd</Template>
+    <Element> timezone</Element>
+    <PositionX> 429.5232</PositionX>
+    <PositionY> 46.15</PositionY>
+    <Height> 3.153</Height>
+    <Width> 14.5108</Width>
+  </row>
+  <row>
+    <Template>arcgis_10_6_reference_landscape_bottom.mxd</Template>
+    <Element> legend</Element>
+    <PositionX> 230.2</PositionX>
+    <PositionY> 59.1</PositionY>
+    <Height> 7.86933067109</Height>
+    <Width> 22.7</Width>
+  </row>
+  <row>
+    <Template>arcgis_10_6_reference_landscape_bottom.mxd</Template>
+    <Element> map_no</Element>
+    <PositionX> 386.0</PositionX>
+    <PositionY> 282.0</PositionY>
+    <Height> 5.0</Height>
+    <Width> 14.0</Width>
+  </row>
+  <row>
+    <Template>arcgis_10_6_reference_landscape_bottom.mxd</Template>
+    <Element> map_version</Element>
+    <PositionX> 402.5</PositionX>
+    <PositionY> 282.0</PositionY>
+    <Height> 5.0</Height>
+    <Width> 7.5</Width>
+  </row>
+  <row>
+    <Template>arcgis_10_6_reference_landscape_bottom.mxd</Template>
+    <Element> vertical_divide4</Element>
+    <PositionX> 280.0</PositionX>
+    <PositionY> 10.0</PositionY>
+    <Height> 60.0</Height>
+    <Width> 0.0</Width>
+  </row>
+  <row>
+    <Template>arcgis_10_6_reference_landscape_bottom.mxd</Template>
+    <Element> vertical_divide5</Element>
+    <PositionX> 340.0</PositionX>
+    <PositionY> 10.0</PositionY>
+    <Height> 60.0</Height>
+    <Width> 0.0</Width>
+  </row>
+  <row>
+    <Template>arcgis_10_6_reference_landscape_bottom.mxd</Template>
+    <Element> glide_no</Element>
+    <PositionX> 365.5</PositionX>
+    <PositionY> 52.5</PositionY>
+    <Height> 4.0</Height>
+    <Width> 44.5</Width>
+  </row>
+  <row>
+    <Template>arcgis_10_6_reference_landscape_bottom.mxd</Template>
+    <Element> glide_no_label</Element>
+    <PositionX> 342.5</PositionX>
+    <PositionY> 52.5</PositionY>
+    <Height> 4.0</Height>
+    <Width> 22.5</Width>
+  </row>
+  <row>
+    <Template>arcgis_10_6_reference_landscape_bottom.mxd</Template>
+    <Element> spatial_reference</Element>
+    <PositionX> 365.5</PositionX>
+    <PositionY> 60.0</PositionY>
+    <Height> 4.0</Height>
+    <Width> 44.5</Width>
+  </row>
+  <row>
+    <Template>arcgis_10_6_reference_landscape_bottom.mxd</Template>
+    <Element> spatial_reference_label</Element>
+    <PositionX> 342.5</PositionX>
+    <PositionY> 58.5</PositionY>
+    <Height> 7.0</Height>
+    <Width> 22.5</Width>
+  </row>
+  <row>
+    <Template>arcgis_10_6_reference_landscape_bottom.mxd</Template>
+    <Element> mxd_name</Element>
+    <PositionX> 430.0</PositionX>
+    <PositionY> 55.0</PositionY>
+    <Height> 4.0</Height>
+    <Width> 44.5</Width>
+  </row>
+  <row>
+    <Template>arcgis_10_6_reference_landscape_bottom.mxd</Template>
+    <Element> mxd_name_label</Element>
+    <PositionX> 430.0</PositionX>
+    <PositionY> 60.0</PositionY>
+    <Height> 4.0</Height>
+    <Width> 22.5</Width>
+  </row>
+  <row>
+    <Template>arcgis_10_6_reference_landscape_bottom.mxd</Template>
+    <Element> create_date_time</Element>
+    <PositionX> 365.5</PositionX>
+    <PositionY> 66.0</PositionY>
+    <Height> 4.0</Height>
+    <Width> 44.5</Width>
+  </row>
+  <row>
+    <Template>arcgis_10_6_reference_landscape_bottom.mxd</Template>
+    <Element> create_date_time_label</Element>
+    <PositionX> 342.5</PositionX>
+    <PositionY> 66.0</PositionY>
+    <Height> 4.0</Height>
+    <Width> 22.5</Width>
+  </row>
+  <row>
+    <Template>arcgis_10_6_reference_landscape_bottom.mxd</Template>
+    <Element> horizontal_divide1</Element>
+    <PositionX> 282.5</PositionX>
+    <PositionY> 50.0</PositionY>
+    <Height> 0.0</Height>
+    <Width> 55.0</Width>
+  </row>
+  <row>
+    <Template>arcgis_10_6_reference_landscape_bottom.mxd</Template>
+    <Element> donor_credit</Element>
+    <PositionX> 342.5</PositionX>
+    <PositionY> 30.5</PositionY>
+    <Height> 7.0</Height>
+    <Width> 67.5</Width>
+  </row>
+  <row>
+    <Template>arcgis_10_6_reference_landscape_bottom.mxd</Template>
+    <Element> disclaimer</Element>
+    <PositionX> 342.5</PositionX>
+    <PositionY> 10.0</PositionY>
+    <Height> 10.0</Height>
+    <Width> 67.5</Width>
+  </row>
+  <row>
+    <Template>arcgis_10_6_reference_landscape_bottom.mxd</Template>
+    <Element> map_producer</Element>
+    <PositionX> 342.5</PositionX>
+    <PositionY> 40.5</PositionY>
+    <Height> 7.0</Height>
+    <Width> 67.5</Width>
+  </row>
+  <row>
+    <Template>arcgis_10_6_reference_landscape_bottom.mxd</Template>
+    <Element> scale</Element>
+    <PositionX> 297.0</PositionX>
+    <PositionY> 52.5</PositionY>
+    <Height> 3.153</Height>
+    <Width> 25.1038</Width>
+  </row>
+  <row>
+    <Template>arcgis_10_6_reference_landscape_bottom.mxd</Template>
+    <Element> scale_bar</Element>
+    <PositionX> 283.8</PositionX>
+    <PositionY> 61.2</PositionY>
+    <Height> 8.0442</Height>
+    <Width> 52.3261</Width>
+  </row>
+  <row>
+    <Template>arcgis_10_6_reference_landscape_bottom.mxd</Template>
+    <Element> vertical_divide3</Element>
+    <PositionX> 217.0</PositionX>
+    <PositionY> 10.0</PositionY>
+    <Height> 60.0</Height>
+    <Width> 0.0</Width>
+  </row>
+  <row>
+    <Template>arcgis_10_6_reference_landscape_bottom.mxd</Template>
+    <Element> vertical_divide2</Element>
+    <PositionX> 148.5</PositionX>
+    <PositionY> 10.0</PositionY>
+    <Height> 60.0</Height>
+    <Width> 0.0</Width>
+  </row>
+  <row>
+    <Template>arcgis_10_6_reference_landscape_bottom.mxd</Template>
+    <Element> country</Element>
+    <PositionX> 10.0</PositionX>
+    <PositionY> 42.0</PositionY>
+    <Height> 8.0</Height>
+    <Width> 65.0</Width>
+  </row>
+  <row>
+    <Template>arcgis_10_6_reference_landscape_bottom.mxd</Template>
+    <Element> title</Element>
+    <PositionX> 10.0</PositionX>
+    <PositionY> 10.0</PositionY>
+    <Height> 27.5</Height>
+    <Width> 67.5</Width>
+  </row>
+  <row>
+    <Template>arcgis_10_6_reference_landscape_bottom.mxd</Template>
+    <Element> mapaction_logo</Element>
+    <PositionX> 10.0</PositionX>
+    <PositionY> 50.0</PositionY>
+    <Height> 20.0</Height>
+    <Width> 49.2</Width>
+  </row>
+  <row>
+    <Template>arcgis_10_6_reference_landscape_bottom.mxd</Template>
+    <Element> vertical_divide1</Element>
+    <PositionX> 80.0</PositionX>
+    <PositionY> 10.0</PositionY>
+    <Height> 60.0</Height>
+    <Width> 0.0</Width>
+  </row>
+  <row>
+    <Template>arcgis_10_6_reference_landscape_bottom.mxd</Template>
+    <Element> data_sources</Element>
+    <PositionX> 282.5</PositionX>
+    <PositionY> 10.0</PositionY>
+    <Height> 37.5</Height>
+    <Width> 55.0</Width>
+  </row>
+  <row>
+    <Template>arcgis_10_6_reference_landscape_bottom.mxd</Template>
+    <Element> north_arrow</Element>
+    <PositionX> 20.0</PositionX>
+    <PositionY> 80.0</PositionY>
+    <Height> 10.0000215983</Height>
+    <Width> 4.9</Width>
+  </row>
+  <row>
+    <Template>arcgis_10_6_reference_landscape_bottom.mxd</Template>
+    <Element> Location map</Element>
+    <PositionX> 152.75</PositionX>
+    <PositionY> 10.0</PositionY>
+    <Height> 60.0</Height>
+    <Width> 60.0</Width>
+  </row>
+  <row>
+    <Template>arcgis_10_6_reference_landscape_bottom.mxd</Template>
+    <Element> Main map</Element>
+    <PositionX> 15.0</PositionX>
+    <PositionY> 75.0</PositionY>
+    <Height> 207.0</Height>
+    <Width> 395.0</Width>
+  </row>
+  <row>
+    <Template>arcgis_10_6_reference_landscape_bottom.mxd</Template>
+    <Element> summary</Element>
+    <PositionX> 82.5</PositionX>
+    <PositionY> 10.0</PositionY>
+    <Height> 60.0</Height>
+    <Width> 63.5</Width>
+  </row>
+  <row>
+    <Template>arcgis_10_6_reference_landscape_bottom.mxd</Template>
+    <Element> working_space</Element>
+    <PositionX> 10.0</PositionX>
+    <PositionY> 10.0</PositionY>
+    <Height> 277.0</Height>
+    <Width> 400.0</Width>
+  </row>
+  <row>
+    <Template>arcgis_10_6_reference_landscape_side.mxd</Template>
+    <Element> scale</Element>
+    <PositionX> 26.5</PositionX>
+    <PositionY> 85.0</PositionY>
+    <Height> 3.153</Height>
+    <Width> 26.6734</Width>
+  </row>
+  <row>
+    <Template>arcgis_10_6_reference_landscape_side.mxd</Template>
+    <Element> timezone</Element>
+    <PositionX> -58.746</PositionX>
+    <PositionY> 52.684</PositionY>
+    <Height> 3.153</Height>
+    <Width> 14.5108</Width>
+  </row>
+  <row>
+    <Template>arcgis_10_6_reference_landscape_side.mxd</Template>
+    <Element> legend</Element>
+    <PositionX> 382.81215</PositionX>
+    <PositionY> 269.1176</PositionY>
+    <Height> 7.8824</Height>
+    <Width> 22.7377</Width>
+  </row>
+  <row>
+    <Template>arcgis_10_6_reference_landscape_side.mxd</Template>
+    <Element> glide_no</Element>
+    <PositionX> 33.0</PositionX>
+    <PositionY> 40.0</PositionY>
+    <Height> 4.0</Height>
+    <Width> 37.0</Width>
+  </row>
+  <row>
+    <Template>arcgis_10_6_reference_landscape_side.mxd</Template>
+    <Element> glide_no_label</Element>
+    <PositionX> 10.0</PositionX>
+    <PositionY> 40.0</PositionY>
+    <Height> 4.0</Height>
+    <Width> 22.5</Width>
+  </row>
+  <row>
+    <Template>arcgis_10_6_reference_landscape_side.mxd</Template>
+    <Element> spatial_reference</Element>
+    <PositionX> 33.0</PositionX>
+    <PositionY> 45.5</PositionY>
+    <Height> 4.0</Height>
+    <Width> 37.0</Width>
+  </row>
+  <row>
+    <Template>arcgis_10_6_reference_landscape_side.mxd</Template>
+    <Element> spatial_reference_label</Element>
+    <PositionX> 10.0</PositionX>
+    <PositionY> 44.0</PositionY>
+    <Height> 7.0</Height>
+    <Width> 22.5</Width>
+  </row>
+  <row>
+    <Template>arcgis_10_6_reference_landscape_side.mxd</Template>
+    <Element> horizontal_divide5</Element>
+    <PositionX> 10.0</PositionX>
+    <PositionY> 57.5</PositionY>
+    <Height> 0.0</Height>
+    <Width> 60.0</Width>
+  </row>
+  <row>
+    <Template>arcgis_10_6_reference_landscape_side.mxd</Template>
+    <Element> horizontal_divide4</Element>
+    <PositionX> 10.0</PositionX>
+    <PositionY> 82.5</PositionY>
+    <Height> 0.0</Height>
+    <Width> 60.0</Width>
+  </row>
+  <row>
+    <Template>arcgis_10_6_reference_landscape_side.mxd</Template>
+    <Element> scale_bar</Element>
+    <PositionX> 15.6</PositionX>
+    <PositionY> 89.9</PositionY>
+    <Height> 8.0355</Height>
+    <Width> 43.1398</Width>
+  </row>
+  <row>
+    <Template>arcgis_10_6_reference_landscape_side.mxd</Template>
+    <Element> mxd_name</Element>
+    <PositionX> -60.0</PositionX>
+    <PositionY> 42.5</PositionY>
+    <Height> 4.0</Height>
+    <Width> 54.5357</Width>
+  </row>
+  <row>
+    <Template>arcgis_10_6_reference_landscape_side.mxd</Template>
+    <Element> mxd_name_label</Element>
+    <PositionX> -60.0</PositionX>
+    <PositionY> 47.5</PositionY>
+    <Height> 4.0</Height>
+    <Width> 22.5</Width>
+  </row>
+  <row>
+    <Template>arcgis_10_6_reference_landscape_side.mxd</Template>
+    <Element> create_date_time</Element>
+    <PositionX> 33.0</PositionX>
+    <PositionY> 51.0</PositionY>
+    <Height> 4.0</Height>
+    <Width> 37.0</Width>
+  </row>
+  <row>
+    <Template>arcgis_10_6_reference_landscape_side.mxd</Template>
+    <Element> create_date_time_label</Element>
+    <PositionX> 10.0</PositionX>
+    <PositionY> 51.0</PositionY>
+    <Height> 4.0</Height>
+    <Width> 22.5</Width>
+  </row>
+  <row>
+    <Template>arcgis_10_6_reference_landscape_side.mxd</Template>
+    <Element> donor_credit</Element>
+    <PositionX> 10.0</PositionX>
+    <PositionY> 21.0</PositionY>
+    <Height> 10.5</Height>
+    <Width> 60.0</Width>
+  </row>
+  <row>
+    <Template>arcgis_10_6_reference_landscape_side.mxd</Template>
+    <Element> disclaimer</Element>
+    <PositionX> 10.0</PositionX>
+    <PositionY> 10.0</PositionY>
+    <Height> 10.0</Height>
+    <Width> 60.0</Width>
+  </row>
+  <row>
+    <Template>arcgis_10_6_reference_landscape_side.mxd</Template>
+    <Element> map_producer</Element>
+    <PositionX> 10.0</PositionX>
+    <PositionY> 33.0</PositionY>
+    <Height> 7.0</Height>
+    <Width> 60.0</Width>
+  </row>
+  <row>
+    <Template>arcgis_10_6_reference_landscape_side.mxd</Template>
+    <Element> Location map</Element>
+    <PositionX> 11.0</PositionX>
+    <PositionY> 103.25</PositionY>
+    <Height> 58.0</Height>
+    <Width> 58.0</Width>
+  </row>
+  <row>
+    <Template>arcgis_10_6_reference_landscape_side.mxd</Template>
+    <Element> country</Element>
+    <PositionX> 10.0</PositionX>
+    <PositionY> 257.0</PositionY>
+    <Height> 8.0</Height>
+    <Width> 60.0</Width>
+  </row>
+  <row>
+    <Template>arcgis_10_6_reference_landscape_side.mxd</Template>
+    <Element> data_sources</Element>
+    <PositionX> 10.0</PositionX>
+    <PositionY> 60.0</PositionY>
+    <Height> 20.0</Height>
+    <Width> 60.0</Width>
+  </row>
+  <row>
+    <Template>arcgis_10_6_reference_landscape_side.mxd</Template>
+    <Element> mapaction_logo</Element>
+    <PositionX> 10.0</PositionX>
+    <PositionY> 267.0</PositionY>
+    <Height> 20.0</Height>
+    <Width> 49.2</Width>
+  </row>
+  <row>
+    <Template>arcgis_10_6_reference_landscape_side.mxd</Template>
+    <Element> map_no</Element>
+    <PositionX> 386.0</PositionX>
+    <PositionY> 282.0</PositionY>
+    <Height> 5.0</Height>
+    <Width> 14.0</Width>
+  </row>
+  <row>
+    <Template>arcgis_10_6_reference_landscape_side.mxd</Template>
+    <Element> map_version</Element>
+    <PositionX> 402.5</PositionX>
+    <PositionY> 282.0</PositionY>
+    <Height> 5.0</Height>
+    <Width> 7.5</Width>
+  </row>
+  <row>
+    <Template>arcgis_10_6_reference_landscape_side.mxd</Template>
+    <Element> horizontal_divide1</Element>
+    <PositionX> 10.0</PositionX>
+    <PositionY> 217.3236</PositionY>
+    <Height> 0.0</Height>
+    <Width> 60.0</Width>
+  </row>
+  <row>
+    <Template>arcgis_10_6_reference_landscape_side.mxd</Template>
+    <Element> horizontal_divide2</Element>
+    <PositionX> 10.0</PositionX>
+    <PositionY> 163.5</PositionY>
+    <Height> 0.0</Height>
+    <Width> 60.0</Width>
+  </row>
+  <row>
+    <Template>arcgis_10_6_reference_landscape_side.mxd</Template>
+    <Element> horizontal_divide3</Element>
+    <PositionX> 10.0</PositionX>
+    <PositionY> 101.0</PositionY>
+    <Height> 0.0</Height>
+    <Width> 60.0</Width>
+  </row>
+  <row>
+    <Template>arcgis_10_6_reference_landscape_side.mxd</Template>
+    <Element> title</Element>
+    <PositionX> 10.0</PositionX>
+    <PositionY> 220.0</PositionY>
+    <Height> 33.0</Height>
+    <Width> 60.0</Width>
+  </row>
+  <row>
+    <Template>arcgis_10_6_reference_landscape_side.mxd</Template>
+    <Element> north_arrow</Element>
+    <PositionX> 80.0</PositionX>
+    <PositionY> 20.0</PositionY>
+    <Height> 10.0000215983</Height>
+    <Width> 4.9</Width>
+  </row>
+  <row>
+    <Template>arcgis_10_6_reference_landscape_side.mxd</Template>
+    <Element> Main map</Element>
+    <PositionX> 75.0</PositionX>
+    <PositionY> 15.0</PositionY>
+    <Height> 267.0</Height>
+    <Width> 335.0</Width>
+  </row>
+  <row>
+    <Template>arcgis_10_6_reference_landscape_side.mxd</Template>
+    <Element> summary</Element>
+    <PositionX> 10.0</PositionX>
+    <PositionY> 166.0</PositionY>
+    <Height> 49.0</Height>
+    <Width> 60.0</Width>
+  </row>
+  <row>
+    <Template>arcgis_10_6_reference_landscape_side.mxd</Template>
+    <Element> working_space</Element>
+    <PositionX> 10.0</PositionX>
+    <PositionY> 10.0</PositionY>
+    <Height> 277.0</Height>
+    <Width> 400.0</Width>
+  </row>
+  <row>
+    <Template>arcgis_10_6_reference_portrait_bottom.mxd</Template>
+    <Element> scale</Element>
+    <PositionX> 240.0776</PositionX>
+    <PositionY> 57.5411</PositionY>
+    <Height> 3.153</Height>
+    <Width> 25.1038</Width>
+  </row>
+  <row>
+    <Template>arcgis_10_6_reference_portrait_bottom.mxd</Template>
+    <Element> timezone</Element>
+    <PositionX> 303.7343</PositionX>
+    <PositionY> 65.2626</PositionY>
+    <Height> 3.153</Height>
+    <Width> 14.5108</Width>
+  </row>
+  <row>
+    <Template>arcgis_10_6_reference_portrait_bottom.mxd</Template>
+    <Element> legend</Element>
+    <PositionX> 259.8</PositionX>
+    <PositionY> 387.1</PositionY>
+    <Height> 7.8824</Height>
+    <Width> 22.7377</Width>
+  </row>
+  <row>
+    <Template>arcgis_10_6_reference_portrait_bottom.mxd</Template>
+    <Element> horizontal_divide1</Element>
+    <PositionX> 82.5</PositionX>
+    <PositionY> 29.0</PositionY>
+    <Height> 0.0</Height>
+    <Width> 63.5</Width>
+  </row>
+  <row>
+    <Template>arcgis_10_6_reference_portrait_bottom.mxd</Template>
+    <Element> map_no</Element>
+    <PositionX> 263.0</PositionX>
+    <PositionY> 405.0</PositionY>
+    <Height> 5.0</Height>
+    <Width> 14.0</Width>
+  </row>
+  <row>
+    <Template>arcgis_10_6_reference_portrait_bottom.mxd</Template>
+    <Element> map_version</Element>
+    <PositionX> 279.5</PositionX>
+    <PositionY> 405.0</PositionY>
+    <Height> 5.0</Height>
+    <Width> 7.5</Width>
+  </row>
+  <row>
+    <Template>arcgis_10_6_reference_portrait_bottom.mxd</Template>
+    <Element> vertical_divide3</Element>
+    <PositionX> 217.0</PositionX>
+    <PositionY> 10.0</PositionY>
+    <Height> 60.0</Height>
+    <Width> 0.0</Width>
+  </row>
+  <row>
+    <Template>arcgis_10_6_reference_portrait_bottom.mxd</Template>
+    <Element> vertical_divide2</Element>
+    <PositionX> 148.5</PositionX>
+    <PositionY> 10.0</PositionY>
+    <Height> 60.0</Height>
+    <Width> 0.0</Width>
+  </row>
+  <row>
+    <Template>arcgis_10_6_reference_portrait_bottom.mxd</Template>
+    <Element> vertical_divide1</Element>
+    <PositionX> 80.0</PositionX>
+    <PositionY> 10.0</PositionY>
+    <Height> 60.0</Height>
+    <Width> 0.0</Width>
+  </row>
+  <row>
+    <Template>arcgis_10_6_reference_portrait_bottom.mxd</Template>
+    <Element> title</Element>
+    <PositionX> 10.0</PositionX>
+    <PositionY> 10.0</PositionY>
+    <Height> 27.5</Height>
+    <Width> 65.0</Width>
+  </row>
+  <row>
+    <Template>arcgis_10_6_reference_portrait_bottom.mxd</Template>
+    <Element> mapaction_logo</Element>
+    <PositionX> 10.0</PositionX>
+    <PositionY> 50.0</PositionY>
+    <Height> 20.0</Height>
+    <Width> 49.2</Width>
+  </row>
+  <row>
+    <Template>arcgis_10_6_reference_portrait_bottom.mxd</Template>
+    <Element> country</Element>
+    <PositionX> 10.0</PositionX>
+    <PositionY> 42.0</PositionY>
+    <Height> 8.0</Height>
+    <Width> 65.0</Width>
+  </row>
+  <row>
+    <Template>arcgis_10_6_reference_portrait_bottom.mxd</Template>
+    <Element> glide_no</Element>
+    <PositionX> 242.5</PositionX>
+    <PositionY> 40.0</PositionY>
+    <Height> 4.0</Height>
+    <Width> 44.5</Width>
+  </row>
+  <row>
+    <Template>arcgis_10_6_reference_portrait_bottom.mxd</Template>
+    <Element> glide_no_label</Element>
+    <PositionX> 219.5</PositionX>
+    <PositionY> 40.0</PositionY>
+    <Height> 4.0</Height>
+    <Width> 22.5</Width>
+  </row>
+  <row>
+    <Template>arcgis_10_6_reference_portrait_bottom.mxd</Template>
+    <Element> spatial_reference</Element>
+    <PositionX> 242.5</PositionX>
+    <PositionY> 45.5</PositionY>
+    <Height> 4.0</Height>
+    <Width> 44.5</Width>
+  </row>
+  <row>
+    <Template>arcgis_10_6_reference_portrait_bottom.mxd</Template>
+    <Element> spatial_reference_label</Element>
+    <PositionX> 219.5</PositionX>
+    <PositionY> 44.0</PositionY>
+    <Height> 7.0</Height>
+    <Width> 22.5</Width>
+  </row>
+  <row>
+    <Template>arcgis_10_6_reference_portrait_bottom.mxd</Template>
+    <Element> mxd_name</Element>
+    <PositionX> 302.0</PositionX>
+    <PositionY> 42.4951</PositionY>
+    <Height> 4.0</Height>
+    <Width> 44.5</Width>
+  </row>
+  <row>
+    <Template>arcgis_10_6_reference_portrait_bottom.mxd</Template>
+    <Element> mxd_name_label</Element>
+    <PositionX> 302.0</PositionX>
+    <PositionY> 47.5</PositionY>
+    <Height> 4.0</Height>
+    <Width> 22.5</Width>
+  </row>
+  <row>
+    <Template>arcgis_10_6_reference_portrait_bottom.mxd</Template>
+    <Element> create_date_time</Element>
+    <PositionX> 242.5</PositionX>
+    <PositionY> 51.0</PositionY>
+    <Height> 4.0</Height>
+    <Width> 44.5</Width>
+  </row>
+  <row>
+    <Template>arcgis_10_6_reference_portrait_bottom.mxd</Template>
+    <Element> create_date_time_label</Element>
+    <PositionX> 219.5</PositionX>
+    <PositionY> 51.0</PositionY>
+    <Height> 4.0</Height>
+    <Width> 22.5</Width>
+  </row>
+  <row>
+    <Template>arcgis_10_6_reference_portrait_bottom.mxd</Template>
+    <Element> horizontal_divide2</Element>
+    <PositionX> 287.0</PositionX>
+    <PositionY> 56.3086</PositionY>
+    <Height> 0.0</Height>
+    <Width> 67.5</Width>
+  </row>
+  <row>
+    <Template>arcgis_10_6_reference_portrait_bottom.mxd</Template>
+    <Element> donor_credit</Element>
+    <PositionX> 219.5</PositionX>
+    <PositionY> 20.5</PositionY>
+    <Height> 10.5</Height>
+    <Width> 67.5</Width>
+  </row>
+  <row>
+    <Template>arcgis_10_6_reference_portrait_bottom.mxd</Template>
+    <Element> disclaimer</Element>
+    <PositionX> 219.5</PositionX>
+    <PositionY> 10.0</PositionY>
+    <Height> 10.0</Height>
+    <Width> 67.5</Width>
+  </row>
+  <row>
+    <Template>arcgis_10_6_reference_portrait_bottom.mxd</Template>
+    <Element> map_producer</Element>
+    <PositionX> 219.5</PositionX>
+    <PositionY> 32.0</PositionY>
+    <Height> 7.0</Height>
+    <Width> 67.5</Width>
+  </row>
+  <row>
+    <Template>arcgis_10_6_reference_portrait_bottom.mxd</Template>
+    <Element> data_sources</Element>
+    <PositionX> 82.5</PositionX>
+    <PositionY> 10.0</PositionY>
+    <Height> 16.5</Height>
+    <Width> 63.5</Width>
+  </row>
+  <row>
+    <Template>arcgis_10_6_reference_portrait_bottom.mxd</Template>
+    <Element> Location map</Element>
+    <PositionX> 152.75</PositionX>
+    <PositionY> 10.0</PositionY>
+    <Height> 60.0</Height>
+    <Width> 60.0</Width>
+  </row>
+  <row>
+    <Template>arcgis_10_6_reference_portrait_bottom.mxd</Template>
+    <Element> scale_bar</Element>
+    <PositionX> 231.7</PositionX>
+    <PositionY> 61.2</PositionY>
+    <Height> 8.0492</Height>
+    <Width> 52.3544</Width>
+  </row>
+  <row>
+    <Template>arcgis_10_6_reference_portrait_bottom.mxd</Template>
+    <Element> north_arrow</Element>
+    <PositionX> 20.0</PositionX>
+    <PositionY> 80.0</PositionY>
+    <Height> 10.0</Height>
+    <Width> 4.9</Width>
+  </row>
+  <row>
+    <Template>arcgis_10_6_reference_portrait_bottom.mxd</Template>
+    <Element> Main map</Element>
+    <PositionX> 15.0</PositionX>
+    <PositionY> 75.0</PositionY>
+    <Height> 330.0</Height>
+    <Width> 272.0</Width>
+  </row>
+  <row>
+    <Template>arcgis_10_6_reference_portrait_bottom.mxd</Template>
+    <Element> summary</Element>
+    <PositionX> 82.5</PositionX>
+    <PositionY> 30.0</PositionY>
+    <Height> 40.0</Height>
+    <Width> 63.5</Width>
+  </row>
+  <row>
+    <Template>arcgis_10_6_reference_portrait_bottom.mxd</Template>
+    <Element> working_space</Element>
+    <PositionX> 10.0</PositionX>
+    <PositionY> 10.0</PositionY>
+    <Height> 400.0</Height>
+    <Width> 277.0</Width>
+  </row>
+  <row>
+    <Template>arcgis_10_6_thematic_landscape.mxd</Template>
+    <Element> create_date_time</Element>
+    <PositionX> -12.0</PositionX>
+    <PositionY> 11.0</PositionY>
+    <Height> 0.5</Height>
+    <Width> 5.0</Width>
+  </row>
+  <row>
+    <Template>arcgis_10_6_thematic_landscape.mxd</Template>
+    <Element> create_date_time_label</Element>
+    <PositionX> -18.0</PositionX>
+    <PositionY> 11.0</PositionY>
+    <Height> 0.5</Height>
+    <Width> 2.5</Width>
+  </row>
+  <row>
+    <Template>arcgis_10_6_thematic_landscape.mxd</Template>
+    <Element> timezone</Element>
+    <PositionX> -5.465</PositionX>
+    <PositionY> 11.0</PositionY>
+    <Height> 0.472900000001</Height>
+    <Width> 2.1766</Width>
+  </row>
+  <row>
+    <Template>arcgis_10_6_thematic_landscape.mxd</Template>
+    <Element> map_no</Element>
+    <PositionX> 38.5</PositionX>
+    <PositionY> 28.7</PositionY>
+    <Height> 0.5</Height>
+    <Width> 1.4003</Width>
+  </row>
+  <row>
+    <Template>arcgis_10_6_thematic_landscape.mxd</Template>
+    <Element> map_version</Element>
+    <PositionX> 40.2</PositionX>
+    <PositionY> 28.7</PositionY>
+    <Height> 0.5</Height>
+    <Width> 0.7502</Width>
+  </row>
+  <row>
+    <Template>arcgis_10_6_thematic_landscape.mxd</Template>
+    <Element> summary_label</Element>
+    <PositionX> -18.0</PositionX>
+    <PositionY> 18.9</PositionY>
+    <Height> 0.472899999999</Height>
+    <Width> 2.0704</Width>
+  </row>
+  <row>
+    <Template>arcgis_10_6_thematic_landscape.mxd</Template>
+    <Element> data_sources_label</Element>
+    <PositionX> -18.0</PositionX>
+    <PositionY> 12.5271</PositionY>
+    <Height> 0.472900000001</Height>
+    <Width> 2.8468</Width>
+  </row>
+  <row>
+    <Template>arcgis_10_6_thematic_landscape.mxd</Template>
+    <Element> mxd_name</Element>
+    <PositionX> -12.0</PositionX>
+    <PositionY> 9.5</PositionY>
+    <Height> 0.472900000001</Height>
+    <Width> 6.3072</Width>
+  </row>
+  <row>
+    <Template>arcgis_10_6_thematic_landscape.mxd</Template>
+    <Element> mxd_name_label</Element>
+    <PositionX> -18.0</PositionX>
+    <PositionY> 9.5271</PositionY>
+    <Height> 0.472900000001</Height>
+    <Width> 3.1279</Width>
+  </row>
+  <row>
+    <Template>arcgis_10_6_thematic_landscape.mxd</Template>
+    <Element> spatial_reference</Element>
+    <PositionX> -12.0</PositionX>
+    <PositionY> 8.5</PositionY>
+    <Height> 0.472900000001</Height>
+    <Width> 2.0706</Width>
+  </row>
+  <row>
+    <Template>arcgis_10_6_thematic_landscape.mxd</Template>
+    <Element> spatial_reference_label</Element>
+    <PositionX> -18.0</PositionX>
+    <PositionY> 8.5271</PositionY>
+    <Height> 0.472900000001</Height>
+    <Width> 3.8338</Width>
+  </row>
+  <row>
+    <Template>arcgis_10_6_thematic_landscape.mxd</Template>
+    <Element> scale</Element>
+    <PositionX> -12.0</PositionX>
+    <PositionY> 7.5</PositionY>
+    <Height> 0.472900000001</Height>
+    <Width> 3.7656</Width>
+  </row>
+  <row>
+    <Template>arcgis_10_6_thematic_landscape.mxd</Template>
+    <Element> scale_label</Element>
+    <PositionX> -18.0</PositionX>
+    <PositionY> 7.5271</PositionY>
+    <Height> 0.472900000001</Height>
+    <Width> 1.2473</Width>
+  </row>
+  <row>
+    <Template>arcgis_10_6_thematic_landscape.mxd</Template>
+    <Element> map_producer</Element>
+    <PositionX> -12.0</PositionX>
+    <PositionY> 4.9</PositionY>
+    <Height> 1.1</Height>
+    <Width> 10.0</Width>
+  </row>
+  <row>
+    <Template>arcgis_10_6_thematic_landscape.mxd</Template>
+    <Element> map_producer_label</Element>
+    <PositionX> -18.0</PositionX>
+    <PositionY> 5.5271</PositionY>
+    <Height> 0.472900000001</Height>
+    <Width> 2.9638</Width>
+  </row>
+  <row>
+    <Template>arcgis_10_6_thematic_landscape.mxd</Template>
+    <Element> donor_credit_label</Element>
+    <PositionX> -18.0</PositionX>
+    <PositionY> 4.0271</PositionY>
+    <Height> 0.472900000001</Height>
+    <Width> 2.6576</Width>
+  </row>
+  <row>
+    <Template>arcgis_10_6_thematic_landscape.mxd</Template>
+    <Element> title</Element>
+    <PositionX> 1.0</PositionX>
+    <PositionY> 27.3</PositionY>
+    <Height> 0.7</Height>
+    <Width> 36.0</Width>
+  </row>
+  <row>
+    <Template>arcgis_10_6_thematic_landscape.mxd</Template>
+    <Element> data_sources</Element>
+    <PositionX> -12.0</PositionX>
+    <PositionY> 11.6</PositionY>
+    <Height> 1.4</Height>
+    <Width> 10.0</Width>
+  </row>
+  <row>
+    <Template>arcgis_10_6_thematic_landscape.mxd</Template>
+    <Element> summary</Element>
+    <PositionX> -12.0</PositionX>
+    <PositionY> 16.2</PositionY>
+    <Height> 3.2</Height>
+    <Width> 10.3</Width>
+  </row>
+  <row>
+    <Template>arcgis_10_6_thematic_landscape.mxd</Template>
+    <Element> disclaimer</Element>
+    <PositionX> -18.0</PositionX>
+    <PositionY> 1.0</PositionY>
+    <Height> 1.0</Height>
+    <Width> 16.0</Width>
+  </row>
+  <row>
+    <Template>arcgis_10_6_thematic_landscape.mxd</Template>
+    <Element> glide_no</Element>
+    <PositionX> -12.0</PositionX>
+    <PositionY> 2.5</PositionY>
+    <Height> 0.5</Height>
+    <Width> 4.8014</Width>
+  </row>
+  <row>
+    <Template>arcgis_10_6_thematic_landscape.mxd</Template>
+    <Element> glide_no_label</Element>
+    <PositionX> -18.0</PositionX>
+    <PositionY> 2.5271</PositionY>
+    <Height> 0.472900000001</Height>
+    <Width> 2.8695</Width>
+  </row>
+  <row>
+    <Template>arcgis_10_6_thematic_landscape.mxd</Template>
+    <Element> donor_credit</Element>
+    <PositionX> -12.0</PositionX>
+    <PositionY> 3.4</PositionY>
+    <Height> 1.1</Height>
+    <Width> 10.0</Width>
+  </row>
+  <row>
+    <Template>arcgis_10_6_thematic_landscape.mxd</Template>
+    <Element> unused_map_elements</Element>
+    <PositionX> -17.7946</PositionX>
+    <PositionY> 26.9467</PositionY>
+    <Height> 1.7533</Height>
+    <Width> 15.5893</Width>
+  </row>
+  <row>
+    <Template>arcgis_10_6_thematic_landscape.mxd</Template>
+    <Element> unused_elements</Element>
+    <PositionX> -19.0</PositionX>
+    <PositionY> 0.0</PositionY>
+    <Height> 29.7</Height>
+    <Width> 18.0</Width>
+  </row>
+  <row>
+    <Template>arcgis_10_6_thematic_landscape.mxd</Template>
+    <Element> source_production_info</Element>
+    <PositionX> 1.0</PositionX>
+    <PositionY> 1.0</PositionY>
+    <Height> 1.0</Height>
+    <Width> 6.5273</Width>
+  </row>
+  <row>
+    <Template>arcgis_10_6_thematic_landscape.mxd</Template>
+    <Element> country</Element>
+    <PositionX> 1.0</PositionX>
+    <PositionY> 28.0</PositionY>
+    <Height> 0.7</Height>
+    <Width> 10.0</Width>
+  </row>
+  <row>
+    <Template>arcgis_10_6_thematic_landscape.mxd</Template>
+    <Element> north_arrow</Element>
+    <PositionX> 39.5</PositionX>
+    <PositionY> 2.25</PositionY>
+    <Height> 1.1616</Height>
+    <Width> 0.5692</Width>
+  </row>
+  <row>
+    <Template>arcgis_10_6_thematic_landscape.mxd</Template>
+    <Element> scale_bar</Element>
+    <PositionX> 38.5</PositionX>
+    <PositionY> 1.0</PositionY>
+    <Height> 1.1082</Height>
+    <Width> 2.5</Width>
+  </row>
+  <row>
+    <Template>arcgis_10_6_thematic_landscape.mxd</Template>
+    <Element> legend</Element>
+    <PositionX> 1.0</PositionX>
+    <PositionY> 2.0</PositionY>
+    <Height> 0.5518</Height>
+    <Width> 1.7561</Width>
+  </row>
+  <row>
+    <Template>arcgis_10_6_thematic_landscape.mxd</Template>
+    <Element> mapaction_logo</Element>
+    <PositionX> 37.3</PositionX>
+    <PositionY> 27.2</PositionY>
+    <Height> 1.5</Height>
+    <Width> 3.69</Width>
+  </row>
+  <row>
+    <Template>arcgis_10_6_thematic_landscape.mxd</Template>
+    <Element> Main map</Element>
+    <PositionX> 1.0</PositionX>
+    <PositionY> 1.0</PositionY>
+    <Height> 27.7</Height>
+    <Width> 40.0</Width>
+  </row>
+  <row>
+    <Template>arcgis_10_6_thematic_portrait.mxd</Template>
+    <Element> timezone</Element>
+    <PositionX> -5.0</PositionX>
+    <PositionY> 19.5</PositionY>
+    <Height> 0.4729</Height>
+    <Width> 2.1766</Width>
+  </row>
+  <row>
+    <Template>arcgis_10_6_thematic_portrait.mxd</Template>
+    <Element> create_date_time</Element>
+    <PositionX> -12.0</PositionX>
+    <PositionY> 19.5</PositionY>
+    <Height> 0.5</Height>
+    <Width> 5.0</Width>
+  </row>
+  <row>
+    <Template>arcgis_10_6_thematic_portrait.mxd</Template>
+    <Element> create_date_time_label</Element>
+    <PositionX> -18.0</PositionX>
+    <PositionY> 19.5</PositionY>
+    <Height> 0.7</Height>
+    <Width> 4.4079</Width>
+  </row>
+  <row>
+    <Template>arcgis_10_6_thematic_portrait.mxd</Template>
+    <Element> map_no</Element>
+    <PositionX> 26.31</PositionX>
+    <PositionY> 40.9</PositionY>
+    <Height> 0.5</Height>
+    <Width> 1.4003</Width>
+  </row>
+  <row>
+    <Template>arcgis_10_6_thematic_portrait.mxd</Template>
+    <Element> map_version</Element>
+    <PositionX> 27.96</PositionX>
+    <PositionY> 40.9</PositionY>
+    <Height> 0.5</Height>
+    <Width> 0.7502</Width>
+  </row>
+  <row>
+    <Template>arcgis_10_6_thematic_portrait.mxd</Template>
+    <Element> title</Element>
+    <PositionX> 1.0</PositionX>
+    <PositionY> 39.6</PositionY>
+    <Height> 0.7</Height>
+    <Width> 23.7</Width>
+  </row>
+  <row>
+    <Template>arcgis_10_6_thematic_portrait.mxd</Template>
+    <Element> country</Element>
+    <PositionX> 1.0</PositionX>
+    <PositionY> 40.3</PositionY>
+    <Height> 0.7</Height>
+    <Width> 10.0</Width>
+  </row>
+  <row>
+    <Template>arcgis_10_6_thematic_portrait.mxd</Template>
+    <Element> summary_label</Element>
+    <PositionX> -18.0</PositionX>
+    <PositionY> 24.9</PositionY>
+    <Height> 0.6687</Height>
+    <Width> 2.9273</Width>
+  </row>
+  <row>
+    <Template>arcgis_10_6_thematic_portrait.mxd</Template>
+    <Element> data_sources_label</Element>
+    <PositionX> -18.0</PositionX>
+    <PositionY> 17.8</PositionY>
+    <Height> 0.6687</Height>
+    <Width> 4.025</Width>
+  </row>
+  <row>
+    <Template>arcgis_10_6_thematic_portrait.mxd</Template>
+    <Element> mxd_name</Element>
+    <PositionX> -12.0</PositionX>
+    <PositionY> 15.5</PositionY>
+    <Height> 0.6306</Height>
+    <Width> 7.593</Width>
+  </row>
+  <row>
+    <Template>arcgis_10_6_thematic_portrait.mxd</Template>
+    <Element> map_name_label</Element>
+    <PositionX> -18.0</PositionX>
+    <PositionY> 15.4</PositionY>
+    <Height> 0.6687</Height>
+    <Width> 4.4225</Width>
+  </row>
+  <row>
+    <Template>arcgis_10_6_thematic_portrait.mxd</Template>
+    <Element> spatial_reference</Element>
+    <PositionX> -12.0</PositionX>
+    <PositionY> 14.5</PositionY>
+    <Height> 0.6306</Height>
+    <Width> 2.7608</Width>
+  </row>
+  <row>
+    <Template>arcgis_10_6_thematic_portrait.mxd</Template>
+    <Element> spatial_reference_label</Element>
+    <PositionX> -18.0</PositionX>
+    <PositionY> 14.4</PositionY>
+    <Height> 0.6687</Height>
+    <Width> 5.4205</Width>
+  </row>
+  <row>
+    <Template>arcgis_10_6_thematic_portrait.mxd</Template>
+    <Element> scale</Element>
+    <PositionX> -12.0</PositionX>
+    <PositionY> 13.5</PositionY>
+    <Height> 0.6306</Height>
+    <Width> 6.3062</Width>
+  </row>
+  <row>
+    <Template>arcgis_10_6_thematic_portrait.mxd</Template>
+    <Element> scale_label</Element>
+    <PositionX> -18.0</PositionX>
+    <PositionY> 13.4</PositionY>
+    <Height> 0.6687</Height>
+    <Width> 1.7635</Width>
+  </row>
+  <row>
+    <Template>arcgis_10_6_thematic_portrait.mxd</Template>
+    <Element> map_producer</Element>
+    <PositionX> -12.0</PositionX>
+    <PositionY> 11.0</PositionY>
+    <Height> 1.1</Height>
+    <Width> 10.0</Width>
+  </row>
+  <row>
+    <Template>arcgis_10_6_thematic_portrait.mxd</Template>
+    <Element> map_producer_label</Element>
+    <PositionX> -18.0</PositionX>
+    <PositionY> 11.0</PositionY>
+    <Height> 0.6687</Height>
+    <Width> 4.1904</Width>
+  </row>
+  <row>
+    <Template>arcgis_10_6_thematic_portrait.mxd</Template>
+    <Element> donor_credit_label</Element>
+    <PositionX> -18.0</PositionX>
+    <PositionY> 9.5</PositionY>
+    <Height> 0.6687</Height>
+    <Width> 3.7576</Width>
+  </row>
+  <row>
+    <Template>arcgis_10_6_thematic_portrait.mxd</Template>
+    <Element> data_sources</Element>
+    <PositionX> -12.0</PositionX>
+    <PositionY> 17.8</PositionY>
+    <Height> 1.3737</Height>
+    <Width> 9.9915</Width>
+  </row>
+  <row>
+    <Template>arcgis_10_6_thematic_portrait.mxd</Template>
+    <Element> summary</Element>
+    <PositionX> -12.0</PositionX>
+    <PositionY> 22.4</PositionY>
+    <Height> 3.2</Height>
+    <Width> 10.4</Width>
+  </row>
+  <row>
+    <Template>arcgis_10_6_thematic_portrait.mxd</Template>
+    <Element> disclaimer</Element>
+    <PositionX> -18.0</PositionX>
+    <PositionY> 7.15</PositionY>
+    <Height> 0.9999</Height>
+    <Width> 16.0001</Width>
+  </row>
+  <row>
+    <Template>arcgis_10_6_thematic_portrait.mxd</Template>
+    <Element> glide_no</Element>
+    <PositionX> -12.0</PositionX>
+    <PositionY> 8.4</PositionY>
+    <Height> 0.6687</Height>
+    <Width> 6.4207</Width>
+  </row>
+  <row>
+    <Template>arcgis_10_6_thematic_portrait.mxd</Template>
+    <Element> glide_no_label</Element>
+    <PositionX> -18.0</PositionX>
+    <PositionY> 8.4</PositionY>
+    <Height> 0.6687</Height>
+    <Width> 4.0572</Width>
+  </row>
+  <row>
+    <Template>arcgis_10_6_thematic_portrait.mxd</Template>
+    <Element> donor_credit</Element>
+    <PositionX> -12.0</PositionX>
+    <PositionY> 9.5</PositionY>
+    <Height> 1.1</Height>
+    <Width> 10.0</Width>
+  </row>
+  <row>
+    <Template>arcgis_10_6_thematic_portrait.mxd</Template>
+    <Element> unused_map_elements</Element>
+    <PositionX> -18.0</PositionX>
+    <PositionY> 33.0</PositionY>
+    <Height> 1.7534</Height>
+    <Width> 15.5895</Width>
+  </row>
+  <row>
+    <Template>arcgis_10_6_thematic_portrait.mxd</Template>
+    <Element> unused_elements</Element>
+    <PositionX> -19.0</PositionX>
+    <PositionY> 6.15</PositionY>
+    <Height> 29.7</Height>
+    <Width> 18.0</Width>
+  </row>
+  <row>
+    <Template>arcgis_10_6_thematic_portrait.mxd</Template>
+    <Element> north_arrow</Element>
+    <PositionX> 27.75</PositionX>
+    <PositionY> 2.0</PositionY>
+    <Height> 0.84</Height>
+    <Width> 0.4172</Width>
+  </row>
+  <row>
+    <Template>arcgis_10_6_thematic_portrait.mxd</Template>
+    <Element> scale_bar</Element>
+    <PositionX> 27.0</PositionX>
+    <PositionY> 0.75</PositionY>
+    <Height> 0.9532</Height>
+    <Width> 1.8182</Width>
+  </row>
+  <row>
+    <Template>arcgis_10_6_thematic_portrait.mxd</Template>
+    <Element> source_production_info</Element>
+    <PositionX> 1.0</PositionX>
+    <PositionY> 0.75</PositionY>
+    <Height> 1.0</Height>
+    <Width> 6.5</Width>
+  </row>
+  <row>
+    <Template>arcgis_10_6_thematic_portrait.mxd</Template>
+    <Element> legend</Element>
+    <PositionX> 1.0</PositionX>
+    <PositionY> 2.0</PositionY>
+    <Height> 0.5518</Height>
+    <Width> 1.7561</Width>
+  </row>
+  <row>
+    <Template>arcgis_10_6_thematic_portrait.mxd</Template>
+    <Element> mapaction_logo</Element>
+    <PositionX> 25.0</PositionX>
+    <PositionY> 39.5</PositionY>
+    <Height> 1.5</Height>
+    <Width> 3.69</Width>
+  </row>
+  <row>
+    <Template>arcgis_10_6_thematic_portrait.mxd</Template>
+    <Element> Main map</Element>
+    <PositionX> 1.0</PositionX>
+    <PositionY> 1.0</PositionY>
+    <Height> 40.0</Height>
+    <Width> 27.7</Width>
+  </row>
+</root>

@@ -793,7 +793,7 @@
   <LabelFont description="Arial,6,-1,5,75,0,0,0,0,0" style=""/>
   <FontColor blue="0" alpha="255" red="0" green="0"/>
  </LayoutItem>
- <LayoutItem type="65641" blendMode="0" id="create_date_time" positionOnPage="33.9702,232.43,mm" itemRotation="0" outlineWidthM="0.3,mm" zValue="8" halign="1" size="25.112,4,mm" position="33.9702,232.43,mm" visibility="1" frame="false" templateUuid="{c241dc92-fef6-4ef5-b7fc-1d80cc77b625}" marginX="0" marginY="0" background="false" referencePoint="6" positionLock="false" excludeFromExports="0" opacity="1" htmlState="0" uuid="{c241dc92-fef6-4ef5-b7fc-1d80cc77b625}" frameJoinStyle="miter" labelText="[% @ma_create %]" groupUuid="" valign="32">
+ <LayoutItem type="65641" blendMode="0" id="create_date_time" positionOnPage="33.9702,232.43,mm" itemRotation="0" outlineWidthM="0.3,mm" zValue="8" halign="1" size="25.112,4,mm" position="33.9702,232.43,mm" visibility="1" frame="false" templateUuid="{c241dc92-fef6-4ef5-b7fc-1d80cc77b625}" marginX="0" marginY="0" background="false" referencePoint="6" positionLock="false" excludeFromExports="0" opacity="1" htmlState="0" uuid="{c241dc92-fef6-4ef5-b7fc-1d80cc77b625}" frameJoinStyle="miter" labelText="[% @ma_created %]" groupUuid="" valign="32">
   <FrameColor blue="0" alpha="255" red="0" green="0"/>
   <BackgroundColor blue="255" alpha="255" red="255" green="255"/>
   <LayoutObject>
@@ -1065,7 +1065,7 @@
   <property value="png" key="atlasRasterFormat"/>
   <property key="variableNames">
    <value>ma_access</value>
-   <value>ma_create</value>
+   <value>ma_created</value>
    <value>ma_datasource</value>
    <value>ma_language</value>
    <value>ma_map_number</value>

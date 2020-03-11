@@ -16,7 +16,7 @@ QGIS templates are maintained using an XSLT script which runs against a master t
 
 **Processing**
 1. Make any required changes to the master QGIS template -e.g. new elements or changed names
-2. Remove any empty rows in the CSV and convert to 'vanilla' XML using http://convertcsv.com/csv-to-xml.htm - the root element should be &lt;root&gt;, with a &lt;row%gt; for each row, and child elements corresponding to column headings
+2. Remove any empty rows in the CSV and convert to 'vanilla' XML using http://convertcsv.com/csv-to-xml.htm - the root element should be &lt;root&gt;, with a &lt;row&gt; for each row, and child elements corresponding to column headings
 3. Process the XML source files (the converted CSV and the master template) using the XSLT - you will need an XSLT 2.0 processor for this, for example Saxon
 4. The result will be a set of template files, one for each template specified in the spreadsheet
 5. Open each template in QGIS and check for errors - at the moment the main map needs to be slightly resized

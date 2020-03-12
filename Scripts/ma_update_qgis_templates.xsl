@@ -19,10 +19,10 @@
     <xsl:strip-space elements="*"/>
 
     <!--The file name of the element values document-->
-    <xsl:variable name="v_values-doc" select="'ma_templates_element_values.xml'"/>
+    <xsl:variable name="v_values-doc" select="'../ArcGIS_settings/ma_templates_element_values.xml'"/>
 
     <!-- The file name of the QGIS master template-->
-    <xsl:variable name="v_template-master" select="'ma_qgis_master_v1.qpt'"/>
+    <xsl:variable name="v_template-master" select="'../ma_qgis_master_v1.qpt'"/>
 
     <!--The prefix for the Arc version used in the element values document-->
     <xsl:variable name="v_arc-version" select="'arcgis_10_6_'"/>
@@ -43,7 +43,7 @@
         <xsl:param name="p_template-name"/>
         <!-- Output a new template document for each template -->
         <xsl:result-document
-            href="{concat('qgis_',substring-before(substring-after($p_template-name,$v_arc-version),'.'),'.qpt')}">
+            href="{concat('../',substring-before(substring-after($p_template-name,$v_arc-version),'.'),'.qpt')}">
             <xsl:copy>
                 <xsl:apply-templates select="@* | node()" mode="m_templates">
                     <xsl:with-param name="p_template-name" select="$p_template-name"/>
@@ -172,7 +172,7 @@
         </xsl:variable>
         <xsl:variable name="v_multiplier">
             <xsl:choose>
-                <xsl:when test="contains($p_template-name, 'thematic')">10</xsl:when>
+                <xsl:when test="contains($p_template-name, 'thematic') or contains($p_template-name, 'reference_landscape_side')">10</xsl:when>
                 <xsl:otherwise>1</xsl:otherwise>
             </xsl:choose>
         </xsl:variable>

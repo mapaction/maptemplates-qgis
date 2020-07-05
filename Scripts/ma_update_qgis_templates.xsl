@@ -8,8 +8,11 @@
     <xsl:output method="xml" encoding="utf-8" indent="yes"/>
     <xsl:strip-space elements="*"/>
 
-    <!--The file name of the element values document-->
+    <!--The file name of the element values document, containing positions and heights of all layout elements-->
     <xsl:variable name="v_values-doc" select="'../ArcGIS_settings/ma_templates_element_values.csv'"/>
+
+    <!--The file name of the language values, containing translations of labels-->
+    <xsl:variable name="v_lang-doc" select="document('../ArcGIS_settings/language_config.xml')"/>
 
     <!-- The file name of the QGIS master template-->
     <xsl:variable name="v_template-master" select="'../ma_qgis_master_v1.qpt'"/>
@@ -17,63 +20,89 @@
     <!--The prefix for the Arc version used in the element values document-->
     <xsl:variable name="v_arc-version" select="'arcmap-10.6_'"/>
 
+    <!--Create a key to hold labels for every item/language combination-->
+    <xsl:key name="k_lang"
+        match="create_date_time_label | data_sources_label | spatial_reference_label | glide_no_label | map_producer | donor_credit | disclaimer"
+        use="concat(local-name(), parent::language/@name)"/>
+
     <xsl:template match="/">
-        <!--Process the master template doc once for each template -->
-        <xsl:apply-templates select="document($v_template-master)" mode="m_templates">
-            <xsl:with-param name="p_template-name">
-                <xsl:value-of select="'arcmap-10.6_reference_landscape_bottom.mxd'"/>
-            </xsl:with-param>
-        </xsl:apply-templates>
-        <xsl:apply-templates select="document($v_template-master)" mode="m_templates">
-            <xsl:with-param name="p_template-name">
-                <xsl:value-of select="'arcmap-10.6_reference_landscape_side.mxd'"/>
-            </xsl:with-param>
-        </xsl:apply-templates>
-        <xsl:apply-templates select="document($v_template-master)" mode="m_templates">
-            <xsl:with-param name="p_template-name">
-                <xsl:value-of select="'arcmap-10.6_reference_portrait_bottom.mxd'"/>
-            </xsl:with-param>
-        </xsl:apply-templates>
-        <xsl:apply-templates select="document($v_template-master)" mode="m_templates">
-            <xsl:with-param name="p_template-name">
-                <xsl:value-of select="'arcmap-10.6_thematic_landscape.mxd'"/>
-            </xsl:with-param>
-        </xsl:apply-templates>
-        <xsl:apply-templates select="document($v_template-master)" mode="m_templates">
-            <xsl:with-param name="p_template-name">
-                <xsl:value-of select="'arcmap-10.6_thematic_portrait.mxd'"/>
-            </xsl:with-param>
-        </xsl:apply-templates>
+        <!--Create a template set for each language specified in the languages doc-->
+        <xsl:for-each select="$v_lang-doc/languageSettings/language/@name">
+            <!--Process the master template doc once for each template and language-->
+            <!--This could be made generic to pick up all template values-->
+            <xsl:apply-templates select="document($v_template-master)" mode="m_templates">
+                <xsl:with-param name="p_template-name">
+                    <xsl:value-of select="'arcmap-10.6_reference_landscape_bottom.mxd'"/>
+                </xsl:with-param>
+                <xsl:with-param name="p_language">
+                    <xsl:value-of select="."/>
+                </xsl:with-param>
+            </xsl:apply-templates>
+            <xsl:apply-templates select="document($v_template-master)" mode="m_templates">
+                <xsl:with-param name="p_template-name">
+                    <xsl:value-of select="'arcmap-10.6_reference_landscape_side.mxd'"/>
+                </xsl:with-param>
+                <xsl:with-param name="p_language">
+                    <xsl:value-of select="."/>
+                </xsl:with-param>
+            </xsl:apply-templates>
+            <xsl:apply-templates select="document($v_template-master)" mode="m_templates">
+                <xsl:with-param name="p_template-name">
+                    <xsl:value-of select="'arcmap-10.6_reference_portrait_bottom.mxd'"/>
+                </xsl:with-param>
+                <xsl:with-param name="p_language">
+                    <xsl:value-of select="."/>
+                </xsl:with-param>
+            </xsl:apply-templates>
+            <xsl:apply-templates select="document($v_template-master)" mode="m_templates">
+                <xsl:with-param name="p_template-name">
+                    <xsl:value-of select="'arcmap-10.6_thematic_landscape.mxd'"/>
+                </xsl:with-param>
+                <xsl:with-param name="p_language">
+                    <xsl:value-of select="."/>
+                </xsl:with-param>
+            </xsl:apply-templates>
+            <xsl:apply-templates select="document($v_template-master)" mode="m_templates">
+                <xsl:with-param name="p_template-name">
+                    <xsl:value-of select="'arcmap-10.6_thematic_portrait.mxd'"/>
+                </xsl:with-param>
+                <xsl:with-param name="p_language">
+                    <xsl:value-of select="."/>
+                </xsl:with-param>
+            </xsl:apply-templates>
+        </xsl:for-each>
     </xsl:template>
 
     <xsl:template match="/Layout" mode="m_templates">
         <xsl:param name="p_template-name"/>
-        <!--Create QGIS template based on source template name-->
+        <xsl:param name="p_language"/>
+        <!--Create QGIS template based on source template name and language-->
         <xsl:result-document
-            href="{concat(substring-before(substring-after($p_template-name,$v_arc-version),'.'),'.qpt')}">
+            href="{concat(substring-before(substring-after($p_template-name,$v_arc-version),'.'),'_',lower-case($p_language),'.qpt')}">
             <xsl:copy>
                 <xsl:apply-templates select="@* | node()" mode="m_templates">
                     <xsl:with-param name="p_template-name" select="$p_template-name"/>
+                    <xsl:with-param name="p_language" select="$p_language"/>
                 </xsl:apply-templates>
             </xsl:copy>
         </xsl:result-document>
     </xsl:template>
 
-    <!-- Change the name of the template to a qgis version -->
+    <!-- Change the name of the template to a qgis version with language-->
     <xsl:template match="/Layout/@name" mode="m_templates">
+        <xsl:param name="p_language"/>
         <xsl:param name="p_template-name"/>
         <xsl:attribute name="name">
             <xsl:value-of
-                select="substring-before(substring-after($p_template-name, $v_arc-version), '.')"/>
+                select="concat(substring-before(substring-after($p_template-name, $v_arc-version), '.'), '_', lower-case($p_language))"
+            />
         </xsl:attribute>
     </xsl:template>
 
     <!-- Change the paper size depending on portrait or landscape -->
     <xsl:template match="/Layout/PageCollection/LayoutItem/@size" mode="m_templates">
         <xsl:param name="p_template-name"/>
-        <xsl:message>
-            <xsl:value-of select="$p_template-name"/>
-        </xsl:message>
+        <xsl:param name="p_language"/>
         <xsl:choose>
             <xsl:when test="contains($p_template-name, 'portrait')">
                 <xsl:attribute name="size">
@@ -88,10 +117,31 @@
         </xsl:choose>
     </xsl:template>
 
+    <!--Set label text values according to language -->
+    <xsl:template match="/Layout/LayoutItem/@labelText" mode="m_templates">
+        <xsl:param name="p_template-name"/>
+        <xsl:param name="p_language"/>
+        <xsl:choose>
+            <xsl:when test="key('k_lang', concat(parent::LayoutItem/@id, $p_language), $v_lang-doc)">
+                <xsl:attribute name="labelText">
+                    <xsl:value-of
+                        select="key('k_lang', concat(parent::LayoutItem/@id, $p_language), $v_lang-doc)/normalize-space(.)"
+                    />
+                </xsl:attribute>
+            </xsl:when>
+            <xsl:otherwise>
+                <xsl:attribute name="labelText">
+                    <xsl:value-of select="."/>
+                </xsl:attribute>
+            </xsl:otherwise>
+        </xsl:choose>
+    </xsl:template>
+
     <!-- Set position for each item-->
     <xsl:template match="/Layout/LayoutItem/@position | /Layout/LayoutItem/@positionOnPage"
         mode="m_templates">
         <xsl:param name="p_template-name"/>
+        <xsl:param name="p_language"/>
         <xsl:variable name="v_attribute" select="local-name()"/>
         <xsl:variable name="v_id" select="parent::LayoutItem/@id"/>
         <xsl:variable name="v_attribute" select="local-name()"/>
@@ -128,6 +178,7 @@
     <!--Include only items which are in the lookup-->
     <xsl:template match="/Layout/LayoutItem" mode="m_templates">
         <xsl:param name="p_template-name"/>
+        <xsl:param name="p_language"/>
         <xsl:variable name="v_attribute" select="local-name()"/>
         <xsl:variable name="v_id" select="@id"/>
         <xsl:variable name="v_this-item" select="."/>
@@ -147,6 +198,7 @@
                 <xsl:copy>
                     <xsl:apply-templates select="@* | node()" mode="m_templates">
                         <xsl:with-param name="p_template-name" select="$p_template-name"/>
+                        <xsl:with-param name="p_language" select="$p_language"/>
                     </xsl:apply-templates>
                 </xsl:copy>
             </xsl:when>
@@ -154,23 +206,6 @@
         </xsl:choose>
     </xsl:template>
 
-    <!--    <xsl:template match="/Layout/LayoutItem/Extent/@ymax" mode="m_templates">
-        <xsl:attribute name="ymax">
-            <xsl:choose>
-                <xsl:when test="../../@id = 'Main map'">
-                    <xsl:message>
-                        <xsl:value-of select="../../@id"/>
-                    </xsl:message>
-                    <xsl:value-of select="format-number(number(../@ymin) + 10675, '0')"/>
-                </xsl:when>
-                <xsl:otherwise>
-                    <xsl:value-of select="format-number(number(../@ymin) + 264297, '0')"/>
-                </xsl:otherwise>
-            </xsl:choose>
-        </xsl:attribute>
-    </xsl:template>
-
--->
     <!-- Set size for each item-->
     <xsl:template match="/Layout/LayoutItem/@size" mode="m_templates">
         <xsl:param name="p_template-name"/>
@@ -421,7 +456,6 @@
             <xsl:when test="$v_item-exists = 'T'">
                 <xsl:for-each select="tokenize(unparsed-text($v_values-doc), '\n')">
                     <xsl:variable name="v_row" select="tokenize(., ',')"/>
-
                     <!-- When the item exists in the lookup, using the position settings -->
                     <xsl:choose>
                         <xsl:when
@@ -479,18 +513,30 @@
 
     <xsl:template match="@* | node()" mode="m_templates">
         <xsl:param name="p_template-name"/>
+        <xsl:param name="p_language"/>
         <xsl:copy>
             <xsl:apply-templates select="@* | node()" mode="m_templates">
                 <xsl:with-param name="p_template-name" select="$p_template-name"/>
+                <xsl:with-param name="p_language" select="$p_language"/>
+
             </xsl:apply-templates>
         </xsl:copy>
     </xsl:template>
 
+    <!--    <xsl:template match="@* | node()" mode="m_language">
+                <xsl:copy>
+            <xsl:apply-templates select="@* | node()" mode="m_language">
+            </xsl:apply-templates>
+        </xsl:copy>
+    </xsl:template>
+-->
     <xsl:template match="@* | node()">
         <xsl:param name="p_template-name"/>
+        <xsl:param name="p_language"/>
         <xsl:copy>
             <xsl:apply-templates select="@* | node()">
                 <xsl:with-param name="p_template-name"/>
+                <xsl:with-param name="p_language" select="$p_language"/>
             </xsl:apply-templates>
         </xsl:copy>
     </xsl:template>

@@ -1,49 +1,56 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
-<xsl:stylesheet version="2.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
-    <!--This script takes as input document XML containing names and positions of elements in an ArcGIS template-->
-    <!--It uses this to process a standard QGIS template, populating it with the correct values-->
-    <!--The input document should be in the format below-->
-    <!--<root>
-        <row>
-            <template>arcgis_10_6_reference_landscape_bottom.mxd</template>
-            <element>country</element>
-            <position_x>8</position_x>
-            <position_y>65</position_y>
-            <height>10</height>
-            <width>50</width>
-        </row>-->
-    <!--It can be converted this from CSV at http://convertcsv.com/csv-to-xml.htm-->
+<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema" exclude-result-prefixes="xs" version="2.0">
+    <!--This script takes as input document a master QGIS template, and references a CSV with names and positions of elements in an ArcGIS template-->
+    <!--It uses this to generated a set of standard QGIS templates, populating them with the correct values-->
+    <!--Ant Scott, MapAction July 2020-->
 
     <xsl:output method="xml" encoding="utf-8" indent="yes"/>
     <xsl:strip-space elements="*"/>
 
     <!--The file name of the element values document-->
-    <xsl:variable name="v_values-doc" select="'../ArcGIS_settings/ma_templates_element_values.xml'"/>
+    <xsl:variable name="v_values-doc" select="'../ArcGIS_settings/ma_templates_element_values.csv'"/>
 
     <!-- The file name of the QGIS master template-->
     <xsl:variable name="v_template-master" select="'../ma_qgis_master_v1.qpt'"/>
 
     <!--The prefix for the Arc version used in the element values document-->
-    <xsl:variable name="v_arc-version" select="'arcgis_10_6_'"/>
-
+    <xsl:variable name="v_arc-version" select="'arcmap-10.6_'"/>
 
     <xsl:template match="/">
-        <!--Process the master template doc once for each unique value of template in the lookup -->
-        <xsl:for-each-group select="root/row" group-by="Template">
-            <xsl:apply-templates select="document($v_template-master)" mode="m_templates">
-                <xsl:with-param name="p_template-name">
-                    <xsl:value-of select="Template"/>
-                </xsl:with-param>
-            </xsl:apply-templates>
-        </xsl:for-each-group>
+        <!--Process the master template doc once for each template -->
+        <xsl:apply-templates select="document($v_template-master)" mode="m_templates">
+            <xsl:with-param name="p_template-name">
+                <xsl:value-of select="'arcmap-10.6_reference_landscape_bottom.mxd'"/>
+            </xsl:with-param>
+        </xsl:apply-templates>
+        <xsl:apply-templates select="document($v_template-master)" mode="m_templates">
+            <xsl:with-param name="p_template-name">
+                <xsl:value-of select="'arcmap-10.6_reference_landscape_side.mxd'"/>
+            </xsl:with-param>
+        </xsl:apply-templates>
+        <xsl:apply-templates select="document($v_template-master)" mode="m_templates">
+            <xsl:with-param name="p_template-name">
+                <xsl:value-of select="'arcmap-10.6_reference_portrait_bottom.mxd'"/>
+            </xsl:with-param>
+        </xsl:apply-templates>
+        <xsl:apply-templates select="document($v_template-master)" mode="m_templates">
+            <xsl:with-param name="p_template-name">
+                <xsl:value-of select="'arcmap-10.6_thematic_landscape.mxd'"/>
+            </xsl:with-param>
+        </xsl:apply-templates>
+        <xsl:apply-templates select="document($v_template-master)" mode="m_templates">
+            <xsl:with-param name="p_template-name">
+                <xsl:value-of select="'arcmap-10.6_thematic_portrait.mxd'"/>
+            </xsl:with-param>
+        </xsl:apply-templates>
     </xsl:template>
 
     <xsl:template match="/Layout" mode="m_templates">
         <xsl:param name="p_template-name"/>
-        <!-- Output a new template document for each template -->
+        <!--Create QGIS template based on source template name-->
         <xsl:result-document
-            href="{concat('../',substring-before(substring-after($p_template-name,$v_arc-version),'.'),'.qpt')}">
+            href="{concat(substring-before(substring-after($p_template-name,$v_arc-version),'.'),'.qpt')}">
             <xsl:copy>
                 <xsl:apply-templates select="@* | node()" mode="m_templates">
                     <xsl:with-param name="p_template-name" select="$p_template-name"/>
@@ -52,8 +59,7 @@
         </xsl:result-document>
     </xsl:template>
 
-    <!-- Change the name of the tempate to a qgis version -->
-
+    <!-- Change the name of the template to a qgis version -->
     <xsl:template match="/Layout/@name" mode="m_templates">
         <xsl:param name="p_template-name"/>
         <xsl:attribute name="name">
@@ -82,19 +88,27 @@
         </xsl:choose>
     </xsl:template>
 
-
     <!-- Set position for each item-->
     <xsl:template match="/Layout/LayoutItem/@position | /Layout/LayoutItem/@positionOnPage"
         mode="m_templates">
         <xsl:param name="p_template-name"/>
         <xsl:variable name="v_attribute" select="local-name()"/>
-        <xsl:variable name="v_id" select="../@id"/>
+        <xsl:variable name="v_id" select="parent::LayoutItem/@id"/>
         <xsl:variable name="v_attribute" select="local-name()"/>
         <xsl:variable name="v_reference-point" select="../@referencePoint"/>
+        <xsl:variable name="v_item-exists">
+            <xsl:for-each select="tokenize(unparsed-text($v_values-doc), '\n')">
+                <xsl:variable name="v_row" select="tokenize(., ',')"/>
+                <!-- When the item exists in the lookup, using the position settings -->
+                <xsl:choose>
+                    <xsl:when
+                        test="$v_row[1] = $p_template-name and $v_row[2] = $v_id and not($v_id = '')"
+                        >T</xsl:when>
+                </xsl:choose>
+            </xsl:for-each>
+        </xsl:variable>
         <xsl:choose>
-            <!-- When the item exists in the lookup, using the position settings -->
-            <xsl:when
-                test="not($v_id = '') and document($v_values-doc)/root/row[Template = $p_template-name][normalize-space(Element) = $v_id]">
+            <xsl:when test="$v_item-exists = 'T'">
                 <xsl:attribute name="{$v_attribute}">
                     <xsl:call-template name="t_get_xy">
                         <xsl:with-param name="p_element" select="$v_id"/>
@@ -116,45 +130,313 @@
         <xsl:param name="p_template-name"/>
         <xsl:variable name="v_attribute" select="local-name()"/>
         <xsl:variable name="v_id" select="@id"/>
+        <xsl:variable name="v_this-item" select="."/>
+        <xsl:variable name="v_item-exists">
+            <xsl:for-each select="tokenize(unparsed-text($v_values-doc), '\n')">
+                <xsl:variable name="v_row" select="tokenize(., ',')"/>
+                <!-- When the item exists in the lookup, using the position settings -->
+                <xsl:choose>
+                    <xsl:when
+                        test="$v_row[1] = $p_template-name and $v_row[2] = $v_id and not($v_id = '')"
+                        >T</xsl:when>
+                </xsl:choose>
+            </xsl:for-each>
+        </xsl:variable>
         <xsl:choose>
-            <xsl:when
-                test="document($v_values-doc)/root/row[Template = $p_template-name][normalize-space(Element) = $v_id]">
+            <xsl:when test="$v_item-exists = 'T'">
                 <xsl:copy>
                     <xsl:apply-templates select="@* | node()" mode="m_templates">
                         <xsl:with-param name="p_template-name" select="$p_template-name"/>
                     </xsl:apply-templates>
                 </xsl:copy>
-
             </xsl:when>
             <xsl:otherwise/>
-
         </xsl:choose>
     </xsl:template>
 
-    <!-- Set siz for each item-->
+    <!--    <xsl:template match="/Layout/LayoutItem/Extent/@ymax" mode="m_templates">
+        <xsl:attribute name="ymax">
+            <xsl:choose>
+                <xsl:when test="../../@id = 'Main map'">
+                    <xsl:message>
+                        <xsl:value-of select="../../@id"/>
+                    </xsl:message>
+                    <xsl:value-of select="format-number(number(../@ymin) + 10675, '0')"/>
+                </xsl:when>
+                <xsl:otherwise>
+                    <xsl:value-of select="format-number(number(../@ymin) + 264297, '0')"/>
+                </xsl:otherwise>
+            </xsl:choose>
+        </xsl:attribute>
+    </xsl:template>
+
+-->
+    <!-- Set size for each item-->
     <xsl:template match="/Layout/LayoutItem/@size" mode="m_templates">
         <xsl:param name="p_template-name"/>
         <xsl:variable name="v_attribute" select="local-name()"/>
         <xsl:variable name="v_id" select="../@id"/>
-        <xsl:variable name="v_multiplier">
-            <xsl:choose>
-                <xsl:when test="contains($p_template-name, 'thematic')">10</xsl:when>
-                <xsl:otherwise>1</xsl:otherwise>
-            </xsl:choose>
+        <xsl:variable name="v_value" select="."/>
+        <xsl:variable name="v_item-exists">
+            <xsl:for-each select="tokenize(unparsed-text($v_values-doc), '\n')">
+                <xsl:variable name="v_row" select="tokenize(., ',')"/>
+                <!-- When the item exists in the lookup, using the position settings -->
+                <xsl:choose>
+                    <xsl:when
+                        test="$v_row[1] = $p_template-name and $v_row[2] = $v_id and not($v_id = '')"
+                        >T</xsl:when>
+                </xsl:choose>
+            </xsl:for-each>
         </xsl:variable>
         <xsl:choose>
-            <xsl:when
-                test="not($v_id = '') and document($v_values-doc)/root/row[Template = $p_template-name][normalize-space(Element) = $v_id]">
-                <xsl:attribute name="{$v_attribute}">
-                    <xsl:value-of
-                        select="concat(document($v_values-doc)/root/row[Template = $p_template-name][normalize-space(Element) = $v_id]/Width * $v_multiplier, ',', document($v_values-doc)/root/row[Template = $p_template-name][normalize-space(Element) = $v_id]/Height * $v_multiplier, ',mm')"
-                    />
-                </xsl:attribute>
+            <xsl:when test="$v_item-exists = 'T'">
+                <xsl:for-each select="tokenize(unparsed-text($v_values-doc), '\n')">
+                    <xsl:variable name="v_row" select="tokenize(., ',')"/>
+                    <!-- When the item exists in the lookup, using the position settings -->
+                    <xsl:choose>
+                        <xsl:when
+                            test="$v_row[1] = $p_template-name and $v_row[2] = $v_id and not($v_id = '')">
+                            <xsl:variable name="v_height" select="normalize-space($v_row[6])"/>
+                            <xsl:variable name="v_width" select="normalize-space($v_row[7])"/>
+                            <xsl:attribute name="{$v_attribute}">
+                                <xsl:value-of select="concat($v_width, ',', $v_height, ',mm')"/>
+                            </xsl:attribute>
+                        </xsl:when>
+                        <xsl:otherwise/>
+                    </xsl:choose>
+                </xsl:for-each>
             </xsl:when>
             <xsl:otherwise>
-                <xsl:attribute name="{$v_attribute}">
-                    <xsl:value-of select="."/>
-                </xsl:attribute>
+                <xsl:value-of select="$v_value"/>
+            </xsl:otherwise>
+        </xsl:choose>
+    </xsl:template>
+
+    <!--Height and Y settings for maps have to be set as data driven, otherwise they are overwritten by extent-->
+    <!--Main map height-->
+    <xsl:template
+        match="/Layout/LayoutItem[@id = ('Main map')]/LayoutObject/dataDefinedProperties/Option[@type = 'Map']/Option[@name = 'properties']/Option[@name = 'dataDefinedHeight']/Option[@name = 'expression']/@value"
+        mode="m_templates">
+        <xsl:param name="p_template-name"/>
+        <xsl:variable name="v_attribute" select="local-name()"/>
+        <xsl:variable name="v_id" select="'Main map'"/>
+        <xsl:variable name="v_value" select="."/>
+        <xsl:variable name="v_item-exists">
+            <xsl:for-each select="tokenize(unparsed-text($v_values-doc), '\n')">
+                <xsl:variable name="v_row" select="tokenize(., ',')"/>
+                <!-- When the item exists in the lookup, using the position settings -->
+                <xsl:choose>
+                    <xsl:when
+                        test="$v_row[1] = $p_template-name and $v_row[2] = $v_id and not($v_id = '')"
+                        >T</xsl:when>
+                </xsl:choose>
+            </xsl:for-each>
+        </xsl:variable>
+        <xsl:variable name="v_item-exists">
+            <xsl:for-each select="tokenize(unparsed-text($v_values-doc), '\n')">
+                <xsl:variable name="v_row" select="tokenize(., ',')"/>
+                <!-- When the item exists in the lookup, using the position settings -->
+                <xsl:choose>
+                    <xsl:when
+                        test="$v_row[1] = $p_template-name and $v_row[2] = $v_id and not($v_id = '')"
+                        >T</xsl:when>
+                </xsl:choose>
+            </xsl:for-each>
+        </xsl:variable>
+        <xsl:choose>
+            <xsl:when test="$v_item-exists = 'T'">
+                <xsl:for-each select="tokenize(unparsed-text($v_values-doc), '\n')">
+                    <xsl:variable name="v_row" select="tokenize(., ',')"/>
+
+                    <!-- When the item exists in the lookup, using the position settings -->
+                    <xsl:choose>
+                        <xsl:when
+                            test="$v_row[1] = $p_template-name and $v_row[2] = $v_id and not($v_id = '')">
+                            <xsl:variable name="v_height" select="normalize-space($v_row[6])"/>
+                            <xsl:attribute name="{$v_attribute}">
+                                <xsl:value-of select="$v_height"/>
+                            </xsl:attribute>
+                        </xsl:when>
+                        <xsl:otherwise/>
+                    </xsl:choose>
+                </xsl:for-each>
+            </xsl:when>
+            <xsl:otherwise>
+                <xsl:value-of select="$v_value"/>
+            </xsl:otherwise>
+        </xsl:choose>
+    </xsl:template>
+
+    <!--Location map height-->
+    <xsl:template
+        match="/Layout/LayoutItem[@id = ('Location map')]/LayoutObject/dataDefinedProperties/Option[@type = 'Map']/Option[@name = 'properties']/Option[@name = 'dataDefinedHeight']/Option[@name = 'expression']/@value"
+        mode="m_templates">
+        <xsl:param name="p_template-name"/>
+        <xsl:variable name="v_attribute" select="local-name()"/>
+        <xsl:variable name="v_id" select="'Location map'"/>
+        <xsl:variable name="v_value" select="."/>
+        <xsl:variable name="v_item-exists">
+            <xsl:for-each select="tokenize(unparsed-text($v_values-doc), '\n')">
+                <xsl:variable name="v_row" select="tokenize(., ',')"/>
+                <!-- When the item exists in the lookup, using the position settings -->
+                <xsl:choose>
+                    <xsl:when
+                        test="$v_row[1] = $p_template-name and $v_row[2] = $v_id and not($v_id = '')"
+                        >T</xsl:when>
+                </xsl:choose>
+            </xsl:for-each>
+        </xsl:variable>
+        <xsl:variable name="v_item-exists">
+            <xsl:for-each select="tokenize(unparsed-text($v_values-doc), '\n')">
+                <xsl:variable name="v_row" select="tokenize(., ',')"/>
+                <!-- When the item exists in the lookup, using the position settings -->
+                <xsl:choose>
+                    <xsl:when
+                        test="$v_row[1] = $p_template-name and $v_row[2] = $v_id and not($v_id = '')"
+                        >T</xsl:when>
+                </xsl:choose>
+            </xsl:for-each>
+        </xsl:variable>
+        <xsl:choose>
+            <xsl:when test="$v_item-exists = 'T'">
+                <xsl:for-each select="tokenize(unparsed-text($v_values-doc), '\n')">
+                    <xsl:variable name="v_row" select="tokenize(., ',')"/>
+
+                    <!-- When the item exists in the lookup, using the position settings -->
+                    <xsl:choose>
+                        <xsl:when
+                            test="$v_row[1] = $p_template-name and $v_row[2] = $v_id and not($v_id = '')">
+                            <xsl:variable name="v_height" select="normalize-space($v_row[6])"/>
+                            <xsl:attribute name="{$v_attribute}">
+                                <xsl:value-of select="$v_height"/>
+                            </xsl:attribute>
+                        </xsl:when>
+                        <xsl:otherwise/>
+                    </xsl:choose>
+                </xsl:for-each>
+            </xsl:when>
+            <xsl:otherwise>
+                <xsl:value-of select="$v_value"/>
+            </xsl:otherwise>
+        </xsl:choose>
+    </xsl:template>
+
+    <!--Main map Y-->
+    <xsl:template
+        match="/Layout/LayoutItem[@id = ('Main map')]/LayoutObject/dataDefinedProperties/Option[@type = 'Map']/Option[@name = 'properties']/Option[@name = 'dataDefinedPositionY']/Option[@name = 'expression']/@value"
+        mode="m_templates">
+        <xsl:param name="p_template-name"/>
+        <xsl:variable name="v_page-height">
+            <xsl:choose>
+                <xsl:when test="contains($p_template-name, 'portrait')">420</xsl:when>
+                <xsl:otherwise>297</xsl:otherwise>
+            </xsl:choose>
+        </xsl:variable>
+        <xsl:variable name="v_attribute" select="local-name()"/>
+        <xsl:variable name="v_id" select="'Main map'"/>
+        <xsl:variable name="v_value" select="."/>
+        <xsl:variable name="v_item-exists">
+            <xsl:for-each select="tokenize(unparsed-text($v_values-doc), '\n')">
+                <xsl:variable name="v_row" select="tokenize(., ',')"/>
+                <!-- When the item exists in the lookup, using the position settings -->
+                <xsl:choose>
+                    <xsl:when
+                        test="$v_row[1] = $p_template-name and $v_row[2] = $v_id and not($v_id = '')"
+                        >T</xsl:when>
+                </xsl:choose>
+            </xsl:for-each>
+        </xsl:variable>
+        <xsl:variable name="v_item-exists">
+            <xsl:for-each select="tokenize(unparsed-text($v_values-doc), '\n')">
+                <xsl:variable name="v_row" select="tokenize(., ',')"/>
+                <!-- When the item exists in the lookup, using the position settings -->
+                <xsl:choose>
+                    <xsl:when
+                        test="$v_row[1] = $p_template-name and $v_row[2] = $v_id and not($v_id = '')"
+                        >T</xsl:when>
+                </xsl:choose>
+            </xsl:for-each>
+        </xsl:variable>
+        <xsl:choose>
+            <xsl:when test="$v_item-exists = 'T'">
+                <xsl:for-each select="tokenize(unparsed-text($v_values-doc), '\n')">
+                    <xsl:variable name="v_row" select="tokenize(., ',')"/>
+
+                    <!-- When the item exists in the lookup, using the position settings -->
+                    <xsl:choose>
+                        <xsl:when
+                            test="$v_row[1] = $p_template-name and $v_row[2] = $v_id and not($v_id = '')">
+                            <xsl:variable name="v_y" select="normalize-space($v_row[5])"/>
+                            <xsl:attribute name="{$v_attribute}">
+                                <xsl:value-of select="$v_page-height - number($v_y)"/>
+                            </xsl:attribute>
+                        </xsl:when>
+                        <xsl:otherwise/>
+                    </xsl:choose>
+                </xsl:for-each>
+            </xsl:when>
+            <xsl:otherwise>
+                <xsl:value-of select="$v_value"/>
+            </xsl:otherwise>
+        </xsl:choose>
+    </xsl:template>
+
+    <!--Location map Y-->
+    <xsl:template
+        match="/Layout/LayoutItem[@id = ('Location map')]/LayoutObject/dataDefinedProperties/Option[@type = 'Map']/Option[@name = 'properties']/Option[@name = 'dataDefinedPositionY']/Option[@name = 'expression']/@value"
+        mode="m_templates">
+        <xsl:param name="p_template-name"/>
+        <xsl:variable name="v_page-height">
+            <xsl:choose>
+                <xsl:when test="contains($p_template-name, 'portrait')">420</xsl:when>
+                <xsl:otherwise>297</xsl:otherwise>
+            </xsl:choose>
+        </xsl:variable>
+        <xsl:variable name="v_attribute" select="local-name()"/>
+        <xsl:variable name="v_id" select="'Location map'"/>
+        <xsl:variable name="v_value" select="."/>
+        <xsl:variable name="v_item-exists">
+            <xsl:for-each select="tokenize(unparsed-text($v_values-doc), '\n')">
+                <xsl:variable name="v_row" select="tokenize(., ',')"/>
+                <!-- When the item exists in the lookup, using the position settings -->
+                <xsl:choose>
+                    <xsl:when
+                        test="$v_row[1] = $p_template-name and $v_row[2] = $v_id and not($v_id = '')"
+                        >T</xsl:when>
+                </xsl:choose>
+            </xsl:for-each>
+        </xsl:variable>
+        <xsl:variable name="v_item-exists">
+            <xsl:for-each select="tokenize(unparsed-text($v_values-doc), '\n')">
+                <xsl:variable name="v_row" select="tokenize(., ',')"/>
+                <!-- When the item exists in the lookup, using the position settings -->
+                <xsl:choose>
+                    <xsl:when
+                        test="$v_row[1] = $p_template-name and $v_row[2] = $v_id and not($v_id = '')"
+                        >T</xsl:when>
+                </xsl:choose>
+            </xsl:for-each>
+        </xsl:variable>
+        <xsl:choose>
+            <xsl:when test="$v_item-exists = 'T'">
+                <xsl:for-each select="tokenize(unparsed-text($v_values-doc), '\n')">
+                    <xsl:variable name="v_row" select="tokenize(., ',')"/>
+
+                    <!-- When the item exists in the lookup, using the position settings -->
+                    <xsl:choose>
+                        <xsl:when
+                            test="$v_row[1] = $p_template-name and $v_row[2] = $v_id and not($v_id = '')">
+                            <xsl:variable name="v_y" select="normalize-space($v_row[5])"/>
+                            <xsl:attribute name="{$v_attribute}">
+                                <xsl:value-of select="$v_page-height - number($v_y)"/>
+                            </xsl:attribute>
+                        </xsl:when>
+                        <xsl:otherwise/>
+                    </xsl:choose>
+                </xsl:for-each>
+            </xsl:when>
+            <xsl:otherwise>
+                <xsl:value-of select="$v_value"/>
             </xsl:otherwise>
         </xsl:choose>
     </xsl:template>
@@ -170,34 +452,29 @@
                 <xsl:otherwise>297</xsl:otherwise>
             </xsl:choose>
         </xsl:variable>
-        <xsl:variable name="v_multiplier">
-            <xsl:choose>
-                <xsl:when test="contains($p_template-name, 'thematic') or contains($p_template-name, 'reference_landscape_side')">10</xsl:when>
-                <xsl:otherwise>1</xsl:otherwise>
-            </xsl:choose>
-        </xsl:variable>
         <xsl:variable name="v_x">
-            <xsl:value-of
-                select="document($v_values-doc)/root/row[Template = $p_template-name][normalize-space(Element) = $p_element]/PositionX * $v_multiplier"
-            />
+            <xsl:for-each select="tokenize(unparsed-text($v_values-doc), '\n')">
+                <xsl:variable name="v_row" select="tokenize(., ',')"/>
+                <!-- When the item exists in the lookup, using the position settings -->
+                <xsl:choose>
+                    <xsl:when test="$v_row[1] = $p_template-name and $v_row[2] = $p_element">
+                        <xsl:value-of select="$v_row[4]"/>
+                    </xsl:when>
+                </xsl:choose>
+            </xsl:for-each>
         </xsl:variable>
         <xsl:variable name="v_y">
-            <xsl:choose>
-                <xsl:when test="1=1">
-                    <xsl:value-of
-                        select="$v_page-height - (document($v_values-doc)/root/row[Template = $p_template-name][normalize-space(Element) = $p_element]/PositionY * $v_multiplier)"/>
-                </xsl:when>
-                <xsl:otherwise>
-                    <xsl:value-of
-                        select="
-                        $v_page-height - (document($v_values-doc)/root/row[Template = $p_template-name][normalize-space(Element) = $p_element]/PositionY * $v_multiplier + document($v_values-doc)/root/row[Template = $p_template-name][normalize-space(element) = $p_element]/Height * $v_multiplier)"/>
-
-                </xsl:otherwise>
-
-            </xsl:choose>
+            <xsl:for-each select="tokenize(unparsed-text($v_values-doc), '\n')">
+                <xsl:variable name="v_row" select="tokenize(., ',')"/>
+                <!-- When the item exists in the lookup, using the position settings -->
+                <xsl:choose>
+                    <xsl:when test="$v_row[1] = $p_template-name and $v_row[2] = $p_element">
+                        <xsl:value-of select="$v_row[5]"/>
+                    </xsl:when>
+                </xsl:choose>
+            </xsl:for-each>
         </xsl:variable>
-
-        <xsl:value-of select="concat($v_x, ',', $v_y, ',mm')"/>
+        <xsl:value-of select="concat($v_x, ',', ($v_page-height - $v_y), ',mm')"/>
     </xsl:template>
 
     <xsl:template match="@* | node()" mode="m_templates">
@@ -217,5 +494,4 @@
             </xsl:apply-templates>
         </xsl:copy>
     </xsl:template>
-
 </xsl:stylesheet>

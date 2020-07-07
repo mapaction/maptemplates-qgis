@@ -2,6 +2,7 @@
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
     xmlns:xs="http://www.w3.org/2001/XMLSchema" exclude-result-prefixes="xs" version="2.0">
     <!--This script takes as input document a master QGIS template, and references a CSV with names and positions of elements in an ArcGIS template-->
+    <!-- It also requires https://github.com/mapaction/mapaction-toolbox/blob/master/arcgis10_mapping_tools/MapAction/MapAction/Resources/language_config.xml to generate templates in a number of languages  -->
     <!--It uses this to generated a set of standard QGIS templates, populating them with the correct values-->
     <!--Ant Scott, MapAction July 2020-->
 
@@ -72,7 +73,8 @@
             </xsl:apply-templates>
         </xsl:for-each>
     </xsl:template>
-
+    
+    <!--Create a new template file for each type/language-->
     <xsl:template match="/Layout" mode="m_templates">
         <xsl:param name="p_template-name"/>
         <xsl:param name="p_language"/>
@@ -463,6 +465,60 @@
                             <xsl:variable name="v_y" select="normalize-space($v_row[5])"/>
                             <xsl:attribute name="{$v_attribute}">
                                 <xsl:value-of select="$v_page-height - number($v_y)"/>
+                            </xsl:attribute>
+                        </xsl:when>
+                        <xsl:otherwise/>
+                    </xsl:choose>
+                </xsl:for-each>
+            </xsl:when>
+            <xsl:otherwise>
+                <xsl:value-of select="$v_value"/>
+            </xsl:otherwise>
+        </xsl:choose>
+    </xsl:template>
+    
+    <!--Scale height needs to be data driven as height value not accepted-->
+    <xsl:template
+        match="/Layout/LayoutItem[@id = ('scale')]/LayoutObject/dataDefinedProperties/Option[@type = 'Map']/Option[@name = 'properties']/Option[@name = 'dataDefinedHeight']/Option[@name = 'expression']/@value"
+        mode="m_templates">
+        <xsl:param name="p_template-name"/>
+        <xsl:variable name="v_attribute" select="local-name()"/>
+        <xsl:variable name="v_id" select="'scale'"/>
+        <xsl:variable name="v_value" select="."/>
+        <xsl:variable name="v_item-exists">
+            <xsl:for-each select="tokenize(unparsed-text($v_values-doc), '\n')">
+                <xsl:variable name="v_row" select="tokenize(., ',')"/>
+                <!-- When the item exists in the lookup, using the position settings -->
+                <xsl:choose>
+                    <xsl:when
+                        test="$v_row[1] = $p_template-name and $v_row[2] = $v_id and not($v_id = '')"
+                        >T</xsl:when>
+                </xsl:choose>
+            </xsl:for-each>
+        </xsl:variable>
+        <xsl:variable name="v_item-exists">
+            <xsl:for-each select="tokenize(unparsed-text($v_values-doc), '\n')">
+                <xsl:variable name="v_row" select="tokenize(., ',')"/>
+                <!-- When the item exists in the lookup, using the position settings -->
+                <xsl:choose>
+                    <xsl:when
+                        test="$v_row[1] = $p_template-name and $v_row[2] = $v_id and not($v_id = '')"
+                        >T</xsl:when>
+                </xsl:choose>
+            </xsl:for-each>
+        </xsl:variable>
+        <xsl:choose>
+            <xsl:when test="$v_item-exists = 'T'">
+                <xsl:for-each select="tokenize(unparsed-text($v_values-doc), '\n')">
+                    <xsl:variable name="v_row" select="tokenize(., ',')"/>
+                    
+                    <!-- When the item exists in the lookup, using the position settings -->
+                    <xsl:choose>
+                        <xsl:when
+                            test="$v_row[1] = $p_template-name and $v_row[2] = $v_id and not($v_id = '')">
+                            <xsl:variable name="v_height" select="normalize-space($v_row[6])"/>
+                            <xsl:attribute name="{$v_attribute}">
+                                <xsl:value-of select="$v_height"/>
                             </xsl:attribute>
                         </xsl:when>
                         <xsl:otherwise/>

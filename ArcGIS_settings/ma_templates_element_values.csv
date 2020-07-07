@@ -1,0 +1,183 @@
+MapName,Type,ElementName,PositionX,PositionY,Height,Width,FontSize,TextValue
+
+arcmap-10.6_reference_landscape_bottom.mxd,country,TEXT_ELEMENT,60.0,279.5,7.5,90.0,18.0,Country: Emergency name
+arcmap-10.6_reference_landscape_bottom.mxd,create_date_time,TEXT_ELEMENT,365.0,60.5,4.5,45.0,10.0,1 Jan 2016 / 12:00
+arcmap-10.6_reference_landscape_bottom.mxd,create_date_time_label,TEXT_ELEMENT,340.0,60.5,4.5,25.0,10.0,Created
+arcmap-10.6_reference_landscape_bottom.mxd,data_sources,TEXT_ELEMENT,270.0,32.5,12.0,65.0,10.0,<ITA>add data sources here (concise list)</ITA>
+arcmap-10.6_reference_landscape_bottom.mxd,data_sources_label,TEXT_ELEMENT,270.0,43.0,5.0,65.0,10.0,<bol>Data Sources</bol>
+arcmap-10.6_reference_landscape_bottom.mxd,disclaimer,TEXT_ELEMENT,270.0,10.0,11.0,65.0,9.0,The depiction and use of boundaries, names and associated data shown here do not imply endorsement or acceptance by MapAction.
+arcmap-10.6_reference_landscape_bottom.mxd,donor_credit,TEXT_ELEMENT,340.0,10.0,11.0,68.5,9.0,Supported by UK Department for International Development and the Ministry of Foreign Affairs of the Netherlands
+arcmap-10.6_reference_landscape_bottom.mxd,glide_no,TEXT_ELEMENT,365.0,40.0,4.5,45.0,10.0,XX_YYYY_XXXXXXX_CCC
+arcmap-10.6_reference_landscape_bottom.mxd,glide_no_label,TEXT_ELEMENT,340.0,40.0,4.5,25.0,10.0,GLIDE Number
+arcmap-10.6_reference_landscape_bottom.mxd,horizontal_divide1,GRAPHIC_ELEMENT,270.0,50.0,0.0,65.0
+arcmap-10.6_reference_landscape_bottom.mxd,language,TEXT_ELEMENT,-50.0,40.0,4.5,30.0,10.0,English
+arcmap-10.6_reference_landscape_bottom.mxd,language_label,TEXT_ELEMENT,-50.0,50.0,4.5,30.0,10.0,Language:
+arcmap-10.6_reference_landscape_bottom.mxd,legend,LEGEND_ELEMENT,197.5,57.5,7.6309,39.6772
+arcmap-10.6_reference_landscape_bottom.mxd,Location map,DATAFRAME_ELEMENT,15.0,10.0,55.0,110.0
+arcmap-10.6_reference_landscape_bottom.mxd,Main map,DATAFRAME_ELEMENT,15.0,70.0,200.0,395.0
+arcmap-10.6_reference_landscape_bottom.mxd,map_name,TEXT_ELEMENT,-50.0,20.0,4.5,50.0,10.0,(map_name) without MA part
+arcmap-10.6_reference_landscape_bottom.mxd,map_name_label,TEXT_ELEMENT,-50.0,30.0,4.5,40.0,10.0,Map Document
+arcmap-10.6_reference_landscape_bottom.mxd,map_no,TEXT_ELEMENT,387.5,282.0,5.0,22.5,12.0,MA010 v1
+arcmap-10.6_reference_landscape_bottom.mxd,map_producer,TEXT_ELEMENT,340.0,23.5,11.0,50.0,9.0,Produced by MapAction mapaction.org country@mapaction.org
+arcmap-10.6_reference_landscape_bottom.mxd,mapaction_logo,PICTURE_ELEMENT,15.0,272.0,15.0,36.9
+arcmap-10.6_reference_landscape_bottom.mxd,mxd_name,TEXT_ELEMENT,-50.0,10.0,4.5,40.0,10.0,(mxd_name) without MA part
+arcmap-10.6_reference_landscape_bottom.mxd,north_arrow,MAPSURROUND_ELEMENT,400.1,75.0,10.0000215983,4.9
+arcmap-10.6_reference_landscape_bottom.mxd,qr_code,PICTURE_ELEMENT,367.5,272.0,15.0,15.0
+arcmap-10.6_reference_landscape_bottom.mxd,qr_text,TEXT_ELEMENT,387.5,272.0,10.0,22.5,11.0,Scan for latest maps
+arcmap-10.6_reference_landscape_bottom.mxd,scale,MAPSURROUND_ELEMENT,296.0,52.0,3.7931,19.3959
+arcmap-10.6_reference_landscape_bottom.mxd,scale_bar,MAPSURROUND_ELEMENT,270.0,57.5,7.9235,32.5995
+arcmap-10.6_reference_landscape_bottom.mxd,scale_label,TEXT_ELEMENT,270.0,51.3155,4.5,25.0,10.0,Scale (at A3):
+arcmap-10.6_reference_landscape_bottom.mxd,spatial_reference,TEXT_ELEMENT,365.0,46.0,9.0,30.0,10.0,UTM Zone 32N / WGS 1984
+arcmap-10.6_reference_landscape_bottom.mxd,spatial_reference_label,TEXT_ELEMENT,340.0,46.0,9.0,25.0,10.0,Projection & Datum
+arcmap-10.6_reference_landscape_bottom.mxd,summary,TEXT_ELEMENT,127.5,10.0,55.0,65.0,12.0,Example: Map shows the extent of known flooding from satellite images on 1 Jan 2019. Affected population figures are from Government of Vulgaria Ministry of Health reports.
+arcmap-10.6_reference_landscape_bottom.mxd,time_zone,TEXT_ELEMENT,365.0,56.5,4.5,25.0,10.0,UTC +06.00
+arcmap-10.6_reference_landscape_bottom.mxd,title,TEXT_ELEMENT,60.0,271.5,7.5,200.0,16.0,Who What Where (3w): Displayed by Regions (as of 1 Jan 2019)
+arcmap-10.6_reference_landscape_bottom.mxd,vertical_divide1,GRAPHIC_ELEMENT,195.0,10.0,55.0,0.0
+arcmap-10.6_reference_landscape_bottom.mxd,vertical_divide2,GRAPHIC_ELEMENT,267.5,10.0,55.0,0.0
+arcmap-10.6_reference_landscape_bottom.mxd,vertical_divide3,GRAPHIC_ELEMENT,337.5,10.0,55.0,0.0
+
+arcmap-10.6_reference_landscape_side.mxd,country,TEXT_ELEMENT,80.0,280.0,7.0,90.0,18.0,Country: Emergency name
+arcmap-10.6_reference_landscape_side.mxd,create_date_time,TEXT_ELEMENT,35.0,78.5,4.0,40.0,10.0,1 Jan 2016 / 12:00
+arcmap-10.6_reference_landscape_side.mxd,create_date_time_label,TEXT_ELEMENT,10.0,78.5,4.0,25.0,10.0,Created
+arcmap-10.6_reference_landscape_side.mxd,data_sources,TEXT_ELEMENT,10.0,87.5,12.0,63.5,10.0,<ITA>add data sources here (concise list)</ITA>
+arcmap-10.6_reference_landscape_side.mxd,data_sources_label,TEXT_ELEMENT,10.0,99.5,4.0,63.5,10.0,Data sources:
+arcmap-10.6_reference_landscape_side.mxd,disclaimer,TEXT_ELEMENT,10.0,15.0,11.0,63.5,9.0,The depiction and use of boundaries, names and associated data shown here do not imply endorsement or acceptance by MapAction.
+arcmap-10.6_reference_landscape_side.mxd,donor_credit,TEXT_ELEMENT,10.0,27.5,15.0,65.0,9.0,Supported by DFID and the Ministry of Foreign Affairs of the Netherlands.
+arcmap-10.6_reference_landscape_side.mxd,glide_no,TEXT_ELEMENT,35.0,58.5,4.0,40.0,10.0,XX_YYYY_XXXXXXX_CCC
+arcmap-10.6_reference_landscape_side.mxd,glide_no_label,TEXT_ELEMENT,10.0,58.5,4.0,25.0,10.0,Glide Number
+arcmap-10.6_reference_landscape_side.mxd,horizontal_divide1,GRAPHIC_ELEMENT,10.0,169.0,0.0,63.5
+arcmap-10.6_reference_landscape_side.mxd,horizontal_divide2,GRAPHIC_ELEMENT,10.0,125.0,0.0,63.5
+arcmap-10.6_reference_landscape_side.mxd,horizontal_divide3,GRAPHIC_ELEMENT,10.0,106.0,0.0,63.5
+arcmap-10.6_reference_landscape_side.mxd,horizontal_divide4,GRAPHIC_ELEMENT,10.0,85.0,0.0,63.5
+arcmap-10.6_reference_landscape_side.mxd,language,TEXT_ELEMENT,-50.0,40.0,4.0,20.0,10.0,English
+arcmap-10.6_reference_landscape_side.mxd,language_label,TEXT_ELEMENT,-50.0,50.0,4.0,20.0,10.0,Language
+arcmap-10.6_reference_landscape_side.mxd,legend,LEGEND_ELEMENT,10.0,158.8691,7.6309,39.6772
+arcmap-10.6_reference_landscape_side.mxd,Location map,DATAFRAME_ELEMENT,10.0,224.0,46.0,63.5
+arcmap-10.6_reference_landscape_side.mxd,Main map,DATAFRAME_ELEMENT,80.0,15.0,255.0,330.0
+arcmap-10.6_reference_landscape_side.mxd,map_name,TEXT_ELEMENT,-50.0,10.0,4.0,40.0,10.0,(map_name) without MA part
+arcmap-10.6_reference_landscape_side.mxd,map_name_label,TEXT_ELEMENT,-50.0,30.0,4.0,20.0,10.0,Map Document
+arcmap-10.6_reference_landscape_side.mxd,map_no,TEXT_ELEMENT,387.5,282.0,5.0,22.5,12.0,MA010 v1
+arcmap-10.6_reference_landscape_side.mxd,map_producer,TEXT_ELEMENT,10.0,45.0,11.0,50.0,9.0,Produced by MapAction mapaction.org country@mapaction.org
+arcmap-10.6_reference_landscape_side.mxd,mapaction_logo,PICTURE_ELEMENT,10.0,272.0,15.0,36.9
+arcmap-10.6_reference_landscape_side.mxd,mxd_name,TEXT_ELEMENT,-50.0,20.0,4.0,40.0,10.0,(mxd_name) without MA part
+arcmap-10.6_reference_landscape_side.mxd,north_arrow,MAPSURROUND_ELEMENT,400.1,20.0,10.0000215983,4.9
+arcmap-10.6_reference_landscape_side.mxd,qr_code,PICTURE_ELEMENT,367.5,272.0,15.0,15.0
+arcmap-10.6_reference_landscape_side.mxd,qr_text,TEXT_ELEMENT,387.5,272.0,10.0,22.5,12.0,Scan for latest maps
+arcmap-10.6_reference_landscape_side.mxd,scale,MAPSURROUND_ELEMENT,35.0,108.5224,3.7931,21.5663
+arcmap-10.6_reference_landscape_side.mxd,scale_bar,MAPSURROUND_ELEMENT,10.0,115.0,7.8498,33.835
+arcmap-10.6_reference_landscape_side.mxd,scale_label,TEXT_ELEMENT,10.0,108.5,3.8155,21.4716,10.0,Scale (at A3): 
+arcmap-10.6_reference_landscape_side.mxd,spatial_reference,TEXT_ELEMENT,35.0,64.0,8.0,30.0,10.0,UTM Zone 32N / WGS 1984
+arcmap-10.6_reference_landscape_side.mxd,spatial_reference_label,TEXT_ELEMENT,10.0,64.0,8.0,25.0,10.0,Projection & Datum
+arcmap-10.6_reference_landscape_side.mxd,summary,TEXT_ELEMENT,10.0,171.5,50.0,63.5,12.0,Example: Map shows the extent of known flooding from satellite images on 1 Jan 2019. Affected population figures are from Government of Vulgaria Ministry of Health reports.
+arcmap-10.6_reference_landscape_side.mxd,time_zone,TEXT_ELEMENT,35.0,74.5,4.0,20.0,10.0,UTC +/- 0
+arcmap-10.6_reference_landscape_side.mxd,title,TEXT_ELEMENT,80.0,272.0,7.0,200.0,16.0,Who What Where (3w): Displayed by Regions (as of 1 Jan 2019)
+
+arcmap-10.6_reference_portrait_bottom.mxd,country,TEXT_ELEMENT,60.0,403.0,7.0,90.0,18.0,Country: Emergency name
+arcmap-10.6_reference_portrait_bottom.mxd,create_date_time,TEXT_ELEMENT,248.5,43.0,4.0,38.5,10.0,1 Jan 2016 / 12:00
+arcmap-10.6_reference_portrait_bottom.mxd,create_date_time_label,TEXT_ELEMENT,223.5,43.0,4.0,25.0,10.0,Created
+arcmap-10.6_reference_portrait_bottom.mxd,data_sources,TEXT_ELEMENT,169.5,43.0,17.0,50.0,10.0,<ITA>add data sources here (concise list)</ITA>
+arcmap-10.6_reference_portrait_bottom.mxd,data_sources_label,TEXT_ELEMENT,169.5,60.0,5.0,50.0,10.0,<bol>Data Sources</bol>
+arcmap-10.6_reference_portrait_bottom.mxd,disclaimer,TEXT_ELEMENT,169.5,10.0,15.0,50.0,9.0,The depiction and use of boundaries, names and associated data shown here do not imply endorsement or acceptance by MapAction.
+arcmap-10.6_reference_portrait_bottom.mxd,donor_credit,TEXT_ELEMENT,169.5,30.0,11.0,50.0,9.0,Supported by DFID, the German Federal Foreign Office and the Hans K Rausing Trust
+arcmap-10.6_reference_portrait_bottom.mxd,glide_no,TEXT_ELEMENT,248.5,23.0,4.0,38.5,10.0,XX_YYYY_XXXXXXX_CCC
+arcmap-10.6_reference_portrait_bottom.mxd,glide_no_label,TEXT_ELEMENT,223.5,23.0,4.0,25.0,10.0,GLIDE Number
+arcmap-10.6_reference_portrait_bottom.mxd,horizontal_divide3,GRAPHIC_ELEMENT,223.5,49.0,0.0,63.5
+arcmap-10.6_reference_portrait_bottom.mxd,language,TEXT_ELEMENT,-50.0,40.0,4.0,20.0,10.0,English
+arcmap-10.6_reference_portrait_bottom.mxd,language_label,TEXT_ELEMENT,-50.0,50.0,4.0,20.0,10.0,English
+arcmap-10.6_reference_portrait_bottom.mxd,legend,LEGEND_ELEMENT,117.5,57.3691,7.6309,39.6772
+arcmap-10.6_reference_portrait_bottom.mxd,Location map,DATAFRAME_ELEMENT,15.0,10.0,55.0,46.0
+arcmap-10.6_reference_portrait_bottom.mxd,Main map,DATAFRAME_ELEMENT,15.0,70.0,323.0,272.0
+arcmap-10.6_reference_portrait_bottom.mxd,map_name,TEXT_ELEMENT,-50.0,10.0,4.0,40.0,10.0,(map_name) without MA part
+arcmap-10.6_reference_portrait_bottom.mxd,map_name_label,TEXT_ELEMENT,-50.0,30.0,4.0,22.5,10.0,Map Document
+arcmap-10.6_reference_portrait_bottom.mxd,map_no,TEXT_ELEMENT,264.5,405.0,5.0,22.5,12.0,MA010 v1
+arcmap-10.6_reference_portrait_bottom.mxd,map_producer,TEXT_ELEMENT,223.5,10.0,11.0,50.0,9.0,Produced by MapAction mapaction.org country@mapaction.org
+arcmap-10.6_reference_portrait_bottom.mxd,mapaction_logo,PICTURE_ELEMENT,15.0,395.0,15.0,36.9
+arcmap-10.6_reference_portrait_bottom.mxd,mxd_name,TEXT_ELEMENT,-50.0,20.0,4.0,37.0,10.0,(mxd_name) without MA part
+arcmap-10.6_reference_portrait_bottom.mxd,north_arrow,MAPSURROUND_ELEMENT,277.1,75.0,10.0,4.9
+arcmap-10.6_reference_portrait_bottom.mxd,qr_code,PICTURE_ELEMENT,244.0,395.0,15.0,15.0
+arcmap-10.6_reference_portrait_bottom.mxd,qr_text,TEXT_ELEMENT,264.5,395.0,10.0,22.5,12.0,Scan for latest maps
+arcmap-10.6_reference_portrait_bottom.mxd,scale,MAPSURROUND_ELEMENT,248.5,51.0224,4.0,20.4599261798
+arcmap-10.6_reference_portrait_bottom.mxd,scale_bar,MAPSURROUND_ELEMENT,223.5,57.0882,7.9118,52.5963
+arcmap-10.6_reference_portrait_bottom.mxd,scale_label,TEXT_ELEMENT,223.5,51.0,3.8155,21.4716,10.0,Scale (at A3): 
+arcmap-10.6_reference_portrait_bottom.mxd,spatial_reference,TEXT_ELEMENT,248.5,29.0,8.0,30.0,10.0,UTM Zone 32N / WGS 1984
+arcmap-10.6_reference_portrait_bottom.mxd,spatial_reference_label,TEXT_ELEMENT,223.5,29.0,8.0,25.0,10.0,Projection & Datum
+arcmap-10.6_reference_portrait_bottom.mxd,summary,TEXT_ELEMENT,63.5,10.0,55.0,50.0,12.0,Example: Map shows the extent of known flooding from satellite images on 1 Jan 2019. Affected population figures are from Government of Vulgaria Ministry of Health reports.
+arcmap-10.6_reference_portrait_bottom.mxd,time_zone,TEXT_ELEMENT,248.5,39.0,4.0,20.0,10.0,UTC +/- 0
+arcmap-10.6_reference_portrait_bottom.mxd,title,TEXT_ELEMENT,60.0,395.0,7.0,180.0,16.0,Who What Where (3w): Displayed by Regions (as of 1 Jan 2019)
+arcmap-10.6_reference_portrait_bottom.mxd,vertical_divide1,GRAPHIC_ELEMENT,115.0,10.0,55.0,0.0
+arcmap-10.6_reference_portrait_bottom.mxd,vertical_divide2,GRAPHIC_ELEMENT,168.0,10.0,55.0,0.0
+arcmap-10.6_reference_portrait_bottom.mxd,vertical_divide3,GRAPHIC_ELEMENT,221.0,10.0,55.0,0.0
+
+arcmap-10.6_thematic_landscape.mxd,country,TEXT_ELEMENT,50.0,280.0,7.0,90.0,18.0,Country: Emergency name
+arcmap-10.6_thematic_landscape.mxd,data_sources,TEXT_ELEMENT,330.0,15.0,5.0,80.0,12.0,<ITA>insert data sources here</ITA>
+arcmap-10.6_thematic_landscape.mxd,data_sources_label,TEXT_ELEMENT,380.0,20.0,5.0,30.0,12.0,Date sources:
+arcmap-10.6_thematic_landscape.mxd,disclaimer,TEXT_ELEMENT,-180.0,10.0,10.0,160.0,12.0,The depiction and use of boundaries, names and associated data shown here do not imply endorsement or acceptance by MapAction.
+arcmap-10.6_thematic_landscape.mxd,donor_credit,TEXT_ELEMENT,-120.0,35.0,10.0,100.0,12.0,Supported by DFID and the Ministry of Foreign Affairs of the Netherlands.
+arcmap-10.6_thematic_landscape.mxd,donor_credit_label,TEXT_ELEMENT,-180.0,40.0,5.0,30.0,12.0,Donor credit:
+arcmap-10.6_thematic_landscape.mxd,glide_no,TEXT_ELEMENT,-120.0,25.0,5.0,50.0,12.0,XX_YYYY_XXXXXXX_CCC
+arcmap-10.6_thematic_landscape.mxd,glide_no_label,TEXT_ELEMENT,-180.0,25.0,5.0,30.0,12.0,Glide number:
+arcmap-10.6_thematic_landscape.mxd,language,TEXT_ELEMENT,-120.0,110.0,5.0,20.0,12.0,English
+arcmap-10.6_thematic_landscape.mxd,language_label,TEXT_ELEMENT,-180.0,110.0,5.0,30.0,12.0,Language:
+arcmap-10.6_thematic_landscape.mxd,legend,LEGEND_ELEMENT,382.2259,25.0,5.3416,27.7741
+arcmap-10.6_thematic_landscape.mxd,Main map,DATAFRAME_ELEMENT,10.0,10.0,277.0,400.0
+arcmap-10.6_thematic_landscape.mxd,map_document_label,TEXT_ELEMENT,-180.0,100.0,5.0,30.0,12.0,Map document:
+arcmap-10.6_thematic_landscape.mxd,map_name,TEXT_ELEMENT,-120.0,100.0,5.0,60.0,12.0,(mxd_name) without MA part
+arcmap-10.6_thematic_landscape.mxd,map_no,TEXT_ELEMENT,387.5,282.0,5.0,22.5,12.0,MA010 v1
+arcmap-10.6_thematic_landscape.mxd,map_producer,TEXT_ELEMENT,-120.0,50.0,15.0,60.0,12.0,Produced by MapAction / www.mapaction.org  / country@mapaction.org
+arcmap-10.6_thematic_landscape.mxd,map_producer_label,TEXT_ELEMENT,-180.0,60.0,5.0,30.0,12.0,Map producer:
+arcmap-10.6_thematic_landscape.mxd,mapaction_logo,PICTURE_ELEMENT,10.0,272.0,15.0,36.9
+arcmap-10.6_thematic_landscape.mxd,mxd_name,TEXT_ELEMENT,-120.0,95.0,5.0,60.0,12.0,(map_name) without MA part
+arcmap-10.6_thematic_landscape.mxd,north_arrow,MAPSURROUND_ELEMENT,19.5,22.5,11.616,5.725
+arcmap-10.6_thematic_landscape.mxd,qr_code,PICTURE_ELEMENT,367.5,272.0,15.0,15.0
+arcmap-10.6_thematic_landscape.mxd,qr_text,TEXT_ELEMENT,387.5,272.0,10.0,22.5,12.0,Scan for latest maps
+arcmap-10.6_thematic_landscape.mxd,scale,TEXT_ELEMENT,-120.0,80.0,5.0,40.0,12.0,1: 5,000,000 (At A4)
+arcmap-10.6_thematic_landscape.mxd,scale_label,TEXT_ELEMENT,-180.0,80.0,5.0,30.0,12.0,Scale
+arcmap-10.6_thematic_landscape.mxd,single_division_scale_bar,MAPSURROUND_ELEMENT,10.0,10.0,10.9494,24.6909
+arcmap-10.6_thematic_landscape.mxd,source_production_info,TEXT_ELEMENT,340.0,10.0,5.0,70.0,10.0,Map created by MapAction (dd/mm/2020)
+arcmap-10.6_thematic_landscape.mxd,spatial_reference,TEXT_ELEMENT,-120.0,90.0,5.0,20.0,12.0,WGS84
+arcmap-10.6_thematic_landscape.mxd,spatial_reference_label,TEXT_ELEMENT,-180.0,90.0,5.0,40.0,12.0,Projection / datum:
+arcmap-10.6_thematic_landscape.mxd,summary,TEXT_ELEMENT,-120.0,190.0,25.0,103.0,12.0,Example: Map shows the extent of known flooding from satellite images on 1 Jan 2012. Affected population figures are from Government of Vulgaria Ministry of Health reports. Planned rapid assessment routes by UNDAC teams for the coming two days are shown.
+arcmap-10.6_thematic_landscape.mxd,summary_label,TEXT_ELEMENT,-180.0,185.0,5.0,30.0,12.0,Summary:
+arcmap-10.6_thematic_landscape.mxd,time_zone,TEXT_ELEMENT,-120.0,70.0,5.0,40.0,12.0,UTC+00.00
+arcmap-10.6_thematic_landscape.mxd,time_zone_label,TEXT_ELEMENT,-180.0,70.0,5.0,30.0,12.0,Time zone:
+arcmap-10.6_thematic_landscape.mxd,title,TEXT_ELEMENT,50.0,272.0,6.5,200.0,16.0,Who What Where (3w): Displayed by Regions (as of 1 Jan 2019)
+arcmap-10.6_thematic_landscape.mxd,unused_elements,GRAPHIC_ELEMENT,-190.0,0.0,297.0,180.0
+arcmap-10.6_thematic_landscape.mxd,unused_map_elements,TEXT_ELEMENT,-175.0,270.0,17.533,155.893,16.0,These map elements are not used in this template but can be used as metadata in the map export tool.
+
+arcmap-10.6_thematic_portrait.mxd,country,TEXT_ELEMENT,55.0,403.0,7.0,90.0,18.0,Country: Emergency name
+arcmap-10.6_thematic_portrait.mxd,data_sources,TEXT_ELEMENT,207.0,15.0,5.0,80.0,12.0,<ita>insert data sources here</ita>
+arcmap-10.6_thematic_portrait.mxd,data_sources_copy,TEXT_ELEMENT,-140.0,130.0,5.0,100.0,12.0,These are my data sources
+arcmap-10.6_thematic_portrait.mxd,data_sources_label,TEXT_ELEMENT,-180.0,130.0,5.0,30.0,12.0,Date sources:
+arcmap-10.6_thematic_portrait.mxd,data_sources_label,TEXT_ELEMENT,257.0,20.0,5.0,30.0,12.0,Date sources:
+arcmap-10.6_thematic_portrait.mxd,disclaimer,TEXT_ELEMENT,-182.9286,15.0,10.0,160.0,12.0,The depiction and use of boundaries, names and associated data shown here do not imply endorsement or acceptance by MapAction.
+arcmap-10.6_thematic_portrait.mxd,donor_credit,TEXT_ELEMENT,-140.0,45.0,10.0,100.0,12.0,Supported by DFID and the Ministry of Foreign Affairs of the Netherlands.
+arcmap-10.6_thematic_portrait.mxd,donor_credit_label,TEXT_ELEMENT,-180.0,50.0,5.0,30.0,12.0,Donor credit:
+arcmap-10.6_thematic_portrait.mxd,glide_no,TEXT_ELEMENT,-140.0,35.0,5.0,50.0,12.0,XX_YYYY_XXXXXXX_CCC
+arcmap-10.6_thematic_portrait.mxd,glide_no_label,TEXT_ELEMENT,-180.0,35.0,5.0,30.0,12.0,Glide number:
+arcmap-10.6_thematic_portrait.mxd,language,TEXT_ELEMENT,-140.0,120.0,5.0,20.0,12.0,English
+arcmap-10.6_thematic_portrait.mxd,language_label,TEXT_ELEMENT,-180.0,120.0,5.0,30.0,12.0,Language:
+arcmap-10.6_thematic_portrait.mxd,legend,LEGEND_ELEMENT,271.6962,25.0,5.3416,15.3038
+arcmap-10.6_thematic_portrait.mxd,Main map,DATAFRAME_ELEMENT,10.0,10.0,400.0,277.0
+arcmap-10.6_thematic_portrait.mxd,map_document_label,TEXT_ELEMENT,-180.0,110.0,5.0,30.0,12.0,Map document:
+arcmap-10.6_thematic_portrait.mxd,map_name,TEXT_ELEMENT,-140.0,110.0,5.0,60.0,12.0,(mxd_name) without MA part
+arcmap-10.6_thematic_portrait.mxd,map_no,TEXT_ELEMENT,264.5,405.0,5.0,22.5,12.0,MA010 v1
+arcmap-10.6_thematic_portrait.mxd,map_producer,TEXT_ELEMENT,-140.0,60.0,15.0,50.0,12.0,Produced by MapAction / www.mapaction.org  / country@mapaction.org
+arcmap-10.6_thematic_portrait.mxd,map_producer_label,TEXT_ELEMENT,-180.0,70.0,5.0,30.0,12.0,Map producer:
+arcmap-10.6_thematic_portrait.mxd,mapaction_logo,PICTURE_ELEMENT,10.0,395.0,15.0,36.9
+arcmap-10.6_thematic_portrait.mxd,mxd_name,TEXT_ELEMENT,-140.0,105.0,5.0,60.0,12.0,(map_name) without MA part
+arcmap-10.6_thematic_portrait.mxd,north_arrow,MAPSURROUND_ELEMENT,15.0,22.5,8.2777,4.056
+arcmap-10.6_thematic_portrait.mxd,qr_code,PICTURE_ELEMENT,244.5,395.0,15.0,15.0
+arcmap-10.6_thematic_portrait.mxd,qr_text,TEXT_ELEMENT,264.5,395.0,10.0,22.5,12.0,Scan for latest maps
+arcmap-10.6_thematic_portrait.mxd,scale,TEXT_ELEMENT,-140.0,90.0,5.0,40.0,12.0,1: 5,000,000 (At A4)
+arcmap-10.6_thematic_portrait.mxd,scale_label,TEXT_ELEMENT,-180.0,90.0,5.0,30.0,12.0,Scale
+arcmap-10.6_thematic_portrait.mxd,single_division_scale_bar,MAPSURROUND_ELEMENT,10.0,10.0,9.3502,20.0
+arcmap-10.6_thematic_portrait.mxd,source_production_info,TEXT_ELEMENT,287.0,10.0,5.0,70.0,10.0,Map created by MapAction (dd/mm/2020)
+arcmap-10.6_thematic_portrait.mxd,spatial_reference,TEXT_ELEMENT,-140.0,100.0,5.0,20.0,12.0,WGS84
+arcmap-10.6_thematic_portrait.mxd,spatial_reference_label,TEXT_ELEMENT,-180.0,100.0,5.0,40.0,12.0,Projection / datum:
+arcmap-10.6_thematic_portrait.mxd,summary,TEXT_ELEMENT,-140.0,230.0,25.0,103.0,12.0,Example: Map shows the extent of known flooding from satellite images on 1 Jan 2012. Affected population figures are from Government of Vulgaria Ministry of Health reports. Planned rapid assessment routes by UNDAC teams for the coming two days are shown.
+arcmap-10.6_thematic_portrait.mxd,summary_label,TEXT_ELEMENT,-180.0,250.0,5.0,30.0,12.0,Summary:
+arcmap-10.6_thematic_portrait.mxd,time_zone,TEXT_ELEMENT,-140.0,80.0,5.0,40.0,12.0,UTC+00.00
+arcmap-10.6_thematic_portrait.mxd,time_zone_label,TEXT_ELEMENT,-180.0,80.0,5.0,30.0,12.0,Time zone:
+arcmap-10.6_thematic_portrait.mxd,title,TEXT_ELEMENT,55.0,395.0,7.0,180.0,16.0,Who What Where (3w): Displayed by Regions (as of 1 Jan 2019)
+arcmap-10.6_thematic_portrait.mxd,unused_elements,GRAPHIC_ELEMENT,-190.0,0.0,297.0,180.0
+arcmap-10.6_thematic_portrait.mxd,unused_map_elements,TEXT_ELEMENT,-175.0,270.0,17.533,155.893,16.0,These map elements are not used in this template but can be used as metadata in the map export tool.
